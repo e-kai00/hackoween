@@ -9,8 +9,8 @@ const photoFileName = [
 ]
 
 
-const imgFolder = "static_gallery/img_gallery/";
-const imgFolderThumb = "static_gallery/img_gallery/thumbnails/";
+const imgFolder = "assets/images/img_gallery/";
+const imgFolderThumb = "assets/images//img_gallery/thumbnails/";
 let photo = "";
 // let photoThumb ="";
 
