@@ -16,3 +16,8 @@
     align-self: center;
     justify-items: center;
 }
+
+body {
+    background-image: linear-gradient(4deg, hsl(257, 39%, 16%), hsl(300, 27%, 15%)) ;
+    color: antiquewhite;
+}
