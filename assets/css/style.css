@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Eater&family=Nosifer&family=Poppins&display=swap');
+
+
+
+:root {
+    --main-bg-color: #1F2833; /* Dark Blue */
+    --main-text-color: #F4A261; /* Orange */
+    --secondary-text-color: #E07A5F; /* Dark Red */
+    --accent-color: #FE5F55; /* Light Red */
+    --border-color: #F4A261; /* Orange */
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(4deg, hsl(257, 39%, 16%), hsl(300, 27%, 15%)) ;
+    color: antiquewhite;
+    font-family: Poppins, sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: .25em;
+    font-family: Nosifer, "sans-serif";
+}
+
