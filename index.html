@@ -3,25 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>halloween showcase</title>
-    <link rel="stylesheet" href="css/styles.css">
- <!--    <link rel="icon" href="favicon.ico"> -->
+       <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserat&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserat&family=Sacramento&display=swap" rel="stylesheet">
-
+    <!-- styles -->
   <style>
   /* Hamburger menu */
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Butcherman);
 
-:root {
-    --main-bg-color: #1F2833; /* Dark Blue */
-    --main-text-color: #F4A261; /* Orange */
-    --secondary-text-color: #E07A5F; /* Dark Red */
-    --accent-color: #FE5F55; /* Light Red */
-    --border-color: #F4A261; /* Orange */
-  }
+
 
   body {
     margin: 0;
@@ -31,7 +26,7 @@
   }
 
   h1 {
-    color: var(--accent-color);
+    color: hsl(var(--white));
     font-size: 7.5rem;
     margin: 50px auto 0 auto;
     font-family: 'Butcherman', serif;
@@ -134,7 +129,7 @@
 
   .intro {
     margin: auto;
-    color: var(--main-text-color);
+    /* color: var(--main-text-color); */
   }
 
   .p-bat {
@@ -217,7 +212,7 @@
   }
 
   .middle-container {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     margin: 100px 0;
   }
 
@@ -239,16 +234,15 @@
  * prefixes.
  */
 
-body
+/* body
 {
   margin: 0;
   padding: 0;
 
-  /* make it look decent enough */
   background: #232323;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
-}
+} */
 
 #menuToggle
 {
@@ -392,54 +386,8 @@ body
   transform: none;
 }
   </style>
-  <body>
-
-<!-- Hamburger menu -->
-
-
-
-<!--    Made by Erik Terwan    -->
-<!--   24th of November 2015   -->
-<!--        MIT License        -->
-<nav role="navigation">
-<div id="menuToggle">
-  <!--
-  A fake / hidden checkbox is used as click reciever,
-  so you can use the :checked selector on it.
-  -->
-  <input type="checkbox" />
-
-  <!--
-  Some spans to act as a hamburger.
-
-  They are acting like a real hamburger,
-  not that McDonalds stuff.
-  -->
-  <span></span>
-  <span></span>
-  <span></span>
-
-  <!--
-  Too bad the menu has to be inside of the button
-  but hey, it's pure CSS magic.
-  -->
-  <ul id="menu">
-    <a href="#"><li>Childerns Animation</li></a>
-    <a href="#"><li>Ghost House</li></a>
-    <a href="#"><li>Hall Of Mirrors</li></a>
-    <a href="#"><li>Game Play</li></a>
-    <a href="#"><li>Registration</li></a>
-
-  </ul>
-</div>
-</nav>
-
-
-
-
-
-
-  </style>
+  </head>
+  
   <body>
 
     <div class="top-container">
@@ -449,7 +397,7 @@ body
       <img class="bloodline-img" src="assets/images/img_index/bloodline.png" alt="bloodline-img">
     </div>
 
-    <div class="middle-container" style="background-color: #1F2833; color: #F4A261;">
+    <div class="middle-container">
       <div class="profile-halloween">
 
 
@@ -517,7 +465,7 @@ body
       </div>
     </div>
 
-    <div class="bottom-container" style="background-color: #1F2833; color: #F4A261;">
+    <div class="bottom-container">
 
       <a class="footer-link" href="https://www.linkedin.com/" style="color: #E07A5F;">LinkedIn</a>
       <a class="footer-link" href="https://twitter.com/" style="color: #E07A5F;">Twitter</a>
@@ -526,4 +474,4 @@ body
 
     </div>
   </body>
-
+</html>

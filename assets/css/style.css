@@ -3,11 +3,12 @@
 
 
 :root {
-    --main-bg-color: #1F2833; /* Dark Blue */
-    --main-text-color: #F4A261; /* Orange */
-    --secondary-text-color: #E07A5F; /* Dark Red */
-    --accent-color: #FE5F55; /* Light Red */
-    --border-color: #F4A261; /* Orange */
+    --dark-purple: 280, 60%, 11%; 
+    --deep-blue: 242, 51%, 6%; 
+    --white: 60, 24%, 96%; 
+    --grey: 214, 19%, 54%; 
+    --orange: 20, 92%, 44%; 
+    --red: 2, 83%, 24%; 
 }
 
 * {
@@ -16,8 +17,8 @@
 }
 
 body {
-    background-image: linear-gradient(4deg, hsl(257, 39%, 16%), hsl(300, 27%, 15%)) ;
-    color: antiquewhite;
+    background-image: linear-gradient(311deg, hsl(var(--dark-purple)), hsl(var(--deep-blue)));
+    color: hsl(var(--white));
     font-family: Poppins, sans-serif;
 }
 
@@ -25,6 +26,6 @@ h2 {
     font-size: 2.5rem;
     letter-spacing: .25em;
     font-family: Nosifer, "sans-serif";
-    text-shadow: #FC0 1px 0 10px;
+    text-shadow: hsl(var(--orange)) 1px 0 10px;
 }
 
