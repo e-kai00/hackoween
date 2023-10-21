@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Creepster&family=Eater&family=Nosifer&display=swap');
+
+
 /* * {
     margin: 0;
     padding: 0;
@@ -15,4 +18,10 @@
     margin-bottom: 100px;
     align-self: center;
     justify-items: center;
+}
+
+body {
+    background-image: linear-gradient(4deg, hsl(257, 39%, 16%), hsl(300, 27%, 15%)) ;
+    color: antiquewhite;
+    font-family: Eater, "sans-serif";
 }
