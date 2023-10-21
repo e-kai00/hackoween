@@ -4,8 +4,8 @@ const computerChoiceElement = document.getElementById("computer-choice");
 const playerChoiceElement = document.getElementById("user-choice");
 const winState = document.getElementById("win-state");
 const rockSymbol = '<img src="assets/images/icons/3792037_halloween_horror_jack_pumpkin.svg">';
-const paperSymbol = '<img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg">';
-const scissorsSymbol = '<img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg">';
+const scissorsSymbol = '<img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg">';
+const paperSymbol = '<img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg">';
 const defaultSymbol = '<i class="fa-solid fa-question"></i>';
 const resetGame = document.getElementById("reset");
 let canPlay = true;
@@ -46,8 +46,8 @@ for (let button of buttons) {
 // Displays the player's choice and removes highlights from buttons activated in previous game
 function displayUserChoice(gameType) {
     const rockChoice = document.getElementById("pumpkin");
-    const paperChoice = document.getElementById("ghost");
-    const scissorsChoice = document.getElementById("death");
+    const paperChoice = document.getElementById("death");
+    const scissorsChoice = document.getElementById("ghost");
     if (gameType === "pumpkin") {
         playerChoiceElement.innerHTML = rockSymbol;
         paperChoice.classList.remove("active");
@@ -77,10 +77,10 @@ function calculateComputerChoice() {
         computerChoice = "pumpkin";
     } else if (computerChoice === 1) {
         computerChoiceElement.innerHTML = paperSymbol;
-        computerChoice = "ghost";
+        computerChoice = "death";
     } else if (computerChoice === 2) {
         computerChoiceElement.innerHTML = scissorsSymbol;
-        computerChoice = "death";
+        computerChoice = "ghost";
     }
     return computerChoice;
 }
@@ -96,14 +96,14 @@ function runGame(gameType, computerChoice) {
         if (gameType === computerChoice) {
             winState.innerText = "DRAW";
             winState.classList.add("draw");
-        } else if ((gameType === "pumpkin" && computerChoice === "ghost") || 
-            (gameType === "ghost" && computerChoice === "death") || 
-            (gameType === "death" && computerChoice === "pumpkin")) {
+        } else if ((gameType === "pumpkin" && computerChoice === "death") || 
+            (gameType === "ghost" && computerChoice === "pumkin") || 
+            (gameType === "death" && computerChoice === "ghost")) {
             winState.innerText = "LOSE";
             winState.classList.add("lose");
-        } else if ((gameType === "pumpkin" && computerChoice === "death") || 
-            (gameType === "ghost" && computerChoice === "pumpkin") || 
-            (gameType === "death" && computerChoice === "ghost")) {
+        } else if ((gameType === "pumpkin" && computerChoice === "ghost") || 
+            (gameType === "ghost" && computerChoice === "death") || 
+            (gameType === "death" && computerChoice === "pumkin")) {
             winState.innerText = "WIN";
             winState.classList.add("win");
         }
@@ -151,7 +151,7 @@ function incrementScores() {
 }
 
 // Variable to display the text in the alert box
-const sweetAlertText = "Select your choice from the 3 buttons, 'Pumpkin', 'Ghost', or 'Scissors'.\n  The computer will pick a random choice.\n  Death beats Pumpkin.\n  Ghost beats Death.\n  Pumpkin beats Ghost.";
+const sweetAlertText = "Select your choice from the 3 buttons, 'Pumpkin', 'Ghost', or 'Death'.\n  The computer will pick a random choice.\n  Death beats Pumpkin.\n  Ghost beats Death.\n  Pumpkin beats Ghost.";
 
 // Sets the content for the sweetalert2 box
 function howToPlay() {
