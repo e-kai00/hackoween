@@ -18,7 +18,7 @@ photoFileName.map((fileName) => {
     const imgSrc = imgFolder + fileName[0];
     const thumbSrc = imgFolderThumb + fileName[1];
 
-    photo += `<figure><a href="${imgSrc}.jpg" data-fancybox=data-caption=""><img src="${thumbSrc}.jpg" width="250" height="250"></a></figure>`
+    photo += `<figure><a href="${imgSrc}.jpg" data-fancybox=data-caption=""><img src="${thumbSrc}.jpg" class="gallery-img" width="250" height="250"></a></figure>`
 
 })
 
