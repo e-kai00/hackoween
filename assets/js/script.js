@@ -47,7 +47,7 @@ for (let button of buttons) {
 function displayUserChoice(gameType) {
     const rockChoice = document.getElementById("pumpkin");
     const paperChoice = document.getElementById("ghost");
-    const scissorsChoice = document.getElementById("vampire");
+    const scissorsChoice = document.getElementById("death");
     if (gameType === "pumpkin") {
         playerChoiceElement.innerHTML = rockSymbol;
         paperChoice.classList.remove("active");
@@ -56,7 +56,7 @@ function displayUserChoice(gameType) {
         playerChoiceElement.innerHTML = paperSymbol;
         rockChoice.classList.remove("active");
         scissorsChoice.classList.remove("active");
-    } else if (gameType === "vampire") {
+    } else if (gameType === "death") {
         playerChoiceElement.innerHTML = scissorsSymbol;
         paperChoice.classList.remove("active");
         rockChoice.classList.remove("active");
@@ -80,7 +80,7 @@ function calculateComputerChoice() {
         computerChoice = "ghost";
     } else if (computerChoice === 2) {
         computerChoiceElement.innerHTML = scissorsSymbol;
-        computerChoice = "vampire";
+        computerChoice = "death";
     }
     return computerChoice;
 }
@@ -97,13 +97,13 @@ function runGame(gameType, computerChoice) {
             winState.innerText = "DRAW";
             winState.classList.add("draw");
         } else if ((gameType === "pumpkin" && computerChoice === "ghost") || 
-            (gameType === "ghost" && computerChoice === "vampire") || 
-            (gameType === "vampire" && computerChoice === "pumpkin")) {
+            (gameType === "ghost" && computerChoice === "death") || 
+            (gameType === "death" && computerChoice === "pumpkin")) {
             winState.innerText = "LOSE";
             winState.classList.add("lose");
-        } else if ((gameType === "pumpkin" && computerChoice === "vampire") || 
+        } else if ((gameType === "pumpkin" && computerChoice === "death") || 
             (gameType === "ghost" && computerChoice === "pumpkin") || 
-            (gameType === "vampire" && computerChoice === "ghost")) {
+            (gameType === "death" && computerChoice === "ghost")) {
             winState.innerText = "WIN";
             winState.classList.add("win");
         }
