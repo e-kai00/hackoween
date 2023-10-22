@@ -150,6 +150,10 @@ function incrementScores() {
     }
 }
 
+function endGame() {
+    alert("Game ended");
+}
+
 // Variable to display the text in the alert box
 const sweetAlertText = "Select your choice from the 3 buttons, 'Pumpkin', 'Ghost', or 'Death'.\n  The computer will pick a random choice.\n  Death beats Pumpkin.\n  Ghost beats Death.\n  Pumpkin beats Ghost.";
 
