@@ -133,9 +133,13 @@ function incrementScores() {
         computerChoiceElement.classList.add("draw");
     }
 
-    if (userScore === 3 || computerScore === 3) {
+    if (userScore === 3) {
         setTimeout(() => {
-            endGame();
+            endGameWin();
+        }, 1000); // Delay showing the alert for 1 second (adjust as needed)
+    } else if (computerScore === 3) {
+        setTimeout(() => {
+            endGameLose();
         }, 1000); // Delay showing the alert for 1 second (adjust as needed)
     }
 
@@ -157,16 +161,57 @@ function incrementScores() {
     }
 }
 
-const sweetAlertTextEndGame = "The Game Ended";
+const sweetAlertTextEndGameWon = "You Won. Here is your discount code: XXX";
 
-function endGame() {
+function endGameWin() {
     Swal.fire({
         icon:       "question",
-        titleText:  "Game Ended",
-        text:       sweetAlertTextEndGame,
+        titleText:  "You Won!",
+        text:       sweetAlertTextEndGameWon,
         confirmButtonColor: "#DD6B55",
-        confirmButtonText: "Button",
+        confirmButtonText: "Enter Your Code",
+    })
+    .then(function (result) {
+        if (result.value) {
+            window.location = "RegisterForm.html";
+        }
     });
+    // Reset the game state
+    document.getElementById("user-score").innerText = "0";
+    document.getElementById("user-score").classList.remove("win", "lose", "draw");
+    document.getElementById("computer-score").innerText = "0";
+    document.getElementById("computer-score").classList.remove("win", "lose", "draw");
+    winState.innerHTML = defaultSymbol;
+    winState.classList.remove("win", "lose", "draw");
+    playerChoiceElement.classList.remove("win", "lose", "draw");
+    computerChoiceElement.classList.remove("win", "lose", "draw");
+    playerChoiceElement.innerHTML = defaultSymbol;
+    computerChoiceElement.innerHTML = defaultSymbol;
+    canPlay = true; // Reset canPlay to allow the player to start a new game
+}
+
+const sweetAlertTextEndGameLost = "You Lost. Would you like to play again?";
+
+function endGameLose() {
+    Swal.fire({
+        icon:       "question",
+        titleText:  "You Lost!",
+        text:       sweetAlertTextEndGameLost,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Play Again",
+    });
+    // Reset the game state
+    document.getElementById("user-score").innerText = "0";
+    document.getElementById("user-score").classList.remove("win", "lose", "draw");
+    document.getElementById("computer-score").innerText = "0";
+    document.getElementById("computer-score").classList.remove("win", "lose", "draw");
+    winState.innerHTML = defaultSymbol;
+    winState.classList.remove("win", "lose", "draw");
+    playerChoiceElement.classList.remove("win", "lose", "draw");
+    computerChoiceElement.classList.remove("win", "lose", "draw");
+    playerChoiceElement.innerHTML = defaultSymbol;
+    computerChoiceElement.innerHTML = defaultSymbol;
+    canPlay = true; // Reset canPlay to allow the player to start a new game
 }
 
 // Variable to display the text in the alert box
