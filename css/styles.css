@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Creepster);
 @import url(https://fonts.googleapis.com/css?family=Nosifer);
 :root {
-    --main-bg-color: #1F2833; /* Dark Blue */
+    --main-bg-color: #3a243b; /* Dark Purple */
     --main-text-color: #F4A261; /* Orange */
     --secondary-text-color: #E07A5F; /* Dark Red */
-    --accent-color: #FE5F55; /* Light Red */
+    --accent-color: #ff4218; /* Light Red */
     --border-color: #F4A261; /* Orange */
   }
   
@@ -85,6 +85,13 @@ img.responsive {
     font-family: 'Creepster', sans-serif;;
     font-weight: bold;
     font-size: 3.5rem;
+  }
+
+  .halloween2 {
+    color: red;
+    font-family: 'Poppins', sans-serif;;
+    font-weight: bold;
+    font-size: 2.0rem;
   }
 
   .profile-halloween
@@ -456,4 +463,15 @@ img.responsive {
 
 #font-white {
   color: white;
+}
+
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  max-width: 90vw;
+  margin: 0 auto; /* Center horizontally */
+  margin-bottom: 100px;
+  align-self: center;
+  justify-items: center;
 }

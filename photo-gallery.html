@@ -1,19 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Fancybox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Photo Gallery</title>
 </head>
 
-<body>
+<body class="middle-container">
+
+ <!-- Header section -->
+ <header id="Home" class="top-container">
+    <!-- Main banner and title -->
+    <div id="main-image">
+        <img src="images/banner.png" alt="Halloween Showcase Banner" class="responsive">
+        <h1>HALLOWEEN<br>SHOWCASE</h1>
+    </div>
+
+    <!-- Various decorative images -->
+    <img class="top-pumpkin" src="images/pumpkin.png" alt="pumpkin-img">
+    <img class="top-ghost" src="images/ghost.png" alt="ghost-img">
+    <img class="bloodline-img" src="images/bloodline.png" alt="bloodline-img">
+
+	
+	<hr>
+
+    <div class="nav-container">
+
+	<a href="index.html#Home">Home</a>
+	<a href="index.html#WhatsOn">What's On?</a>
+	<a href="index.html#PlaceToBe">Place To Be</a>
+    <a href="photo-gallery.html">Gallery</a>
+    <a href="challenge.html">Game Play</a>
+	<a href="registration.html">Register Here</a>
+
+<hr>
+
     <main>
         <!-- intro text -->
         <div><h2>Our Photo gallery</h2>
@@ -24,17 +51,25 @@
         <div id="gallery-container"></div>
     </main>
 
-    <footer></footer>
 
-    <script src="assets/js/gallery.js"></script>
 
-    <!-- Fancybox -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-        Fancybox.bind("[data-fancybox]", {
-            // Your custom options
-        });
-    </script>
+</div>
+
+<footer></footer>
+
+<script src="assets/js/gallery.js"></script>
+
+<!-- Fancybox -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+</script>
+
+
 </body>
 
 </html>
+
+
