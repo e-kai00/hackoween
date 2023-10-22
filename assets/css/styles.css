@@ -1,0 +1,459 @@
+@import url(https://fonts.googleapis.com/css?family=Creepster);
+@import url(https://fonts.googleapis.com/css?family=Nosifer);
+:root {
+    --main-bg-color: #1F2833; /* Dark Blue */
+    --main-text-color: #F4A261; /* Orange */
+    --secondary-text-color: #E07A5F; /* Dark Red */
+    --accent-color: #FE5F55; /* Light Red */
+    --border-color: #F4A261; /* Orange */
+  }
+  
+  body {
+
+    background-color: var(--main-bg-color);
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: var(--main-text-color);
+  }
+
+img.responsive {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Preserve aspect ratio */
+}
+  
+  h1 {
+    color: var(--accent-color);
+    font-family: 'Creepster', sans-serif;
+    font-size: 6rem;
+    font-weight: normal;
+    position: absolute; /* Position the h1 text absolutely within the div */
+    top: 20%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    padding-bottom: 10px;
+}
+
+  h2 {
+    color: var(--accent-color);
+    font-family: 'Nosifer', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    color: var(--accent-color);
+    font-family: 'Nosifer', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    
+    padding-bottom: 10px;
+  }
+  
+ 
+
+  p {
+    /* line-height: 2.8; */
+    margin: 0; /* Adjust the margin as needed */
+    padding: 0; /* Adjust the padding as needed */
+  }
+
+  
+  
+  hr {
+    border: dotted var(--secondary-text-color) 6px;
+    
+    border-bottom: none;
+    width: 50%;
+  }
+  
+  a {
+    color: var(--main-text-color);
+    font-family: 'Creepster', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--secondary-text-color);
+  }
+
+  .halloween  {
+    color: white;
+    font-family: 'Creepster', sans-serif;;
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+
+  .profile-halloween
+  {
+    color: var(--accent-color);
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+  }
+
+  .bat-row {
+    width: 33%;
+    margin: 150px auto 150px auto;
+    text-align: left;
+  }
+  
+  .castle-row {
+    width: 33%;
+    margin: 150px auto 150px auto;
+    text-align: right;
+  }
+
+  .spiderweb-row {
+    width: 33%;
+    margin: 150px auto 150px auto;
+    text-align: left;
+  }
+  
+  .bat-img {
+    margin-right: 30px;
+    width: 25%;
+    float: left;
+  }
+  
+  .castle-img {
+    margin-left: 30px;
+    width: 25%;
+    float: right;
+  }
+
+  .spiderweb-img {
+    margin-right: 30px;
+    width: 25%;
+    float: left;
+  }
+  
+  .party-img {
+    width: 25%;
+  }
+  
+  .p-color {
+    font-family: 'Merriweather', sans-serif;
+    color: var(--main-text-color);
+  }
+  
+  .intro {
+    margin: auto;
+    color: var(--main-text-color);
+  }
+  
+  .p-bat {
+    color: var(--main-text-color);
+    clear: left;
+  }
+  
+  .p-castle {
+    color: var(--main-text-color);
+    clear: right;
+  }
+
+  .p-spiderweb {
+    color: var(--main-text-color);
+    clear: left;
+  }
+
+  .five-pound {
+    position: absolute;
+     
+    width: 12%;
+  }
+        
+  .top-pumpkin {
+    position: absolute;
+    right: 115px;
+    top: 40px;
+    width: 12%;
+  }
+  
+  .top-ghost {
+    position: absolute;
+    left: 115px;
+    top: 200px;
+    width: 15%;
+  }
+  
+  .bloodline-img {
+    left: 300px;
+    bottom: 300px;
+    width: 45%;
+  }
+  
+  .register-msg {
+    margin: 40px auto 60px auto;
+  }
+  
+  .copyright {
+    color: var(--secondary-text-color);
+    font-size: 0.75rem;
+    padding: 10px 0;
+  }
+  
+  .btn {
+    background: var(--accent-color);
+    background-image: -webkit-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
+    background-image: -moz-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
+    background-image: -ms-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
+    background-image: -o-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
+    background-image: linear-gradient(to bottom, var(--accent-color), var(--secondary-text-color));
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 8px;
+    font-family: "Arial";
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    position: relative;
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #4d5154, #4d5154);
+    background-image: -moz-linear-gradient(top, #4d5154, #4d5154);
+    background-image: -ms-linear-gradient(top, #4d5154, #4d5154);
+    background-image: -o-linear-gradient(top, #4d5154, #4d5154);
+    background-image: linear-gradient(to bottom, #4d5154, #4d5154);
+    text-decoration: none;
+  }
+  
+  .top-container {
+    background-color: var(--main-bg-color);
+    position: relative;
+    padding-top: 10px;
+  }
+  
+  .middle-container {
+    background-color: var(--main-bg-color);
+    margin: 2px 0;
+    color: var(--accent-color);
+    font-family: Nosifer, serif;
+    font-size: 1.75rem;
+    font-weight: normal;
+    padding-bottom: 2px;
+    
+  }
+
+  .middle-container2 {
+    background-color: var(--main-bg-color);
+    margin: 2px 0;
+    color: var(main-text-color);
+    font-family: Poppins,sans-serif;
+    font-size: 1.15rem;
+    font-weight: normal;
+    padding-bottom: 2px;
+    
+  }
+
+ .nav-container {
+    color: var(--accent-color);
+    font-family: 'Nosifer', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    background-color: var(--main-bg-color);
+    margin: 2px 0;
+  }
+ 
+
+  .bottom-container {
+    background-color: var(--main-bg-color);
+    padding: 10px 0 20px;
+  }
+  
+  /* Apply CSS styles to the main-image div */
+  #main-image {
+    position: relative; /* Create a positioning context */
+    text-align: center; /* Center the content within the div */
+}
+
+#links {
+  justify-content: flex-end;
+  margin: 2px;
+  padding-bottom: 5px;
+}
+
+#links a {
+  padding: 5px;
+
+ /* Add a media query for responsiveness */
+ @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5em; /* Reduce font size on smaller screens */
+        background-color: var(--main-bg-color);
+    }
+}
+}
+#nav-font {
+  font-size: 2.5em; 
+}
+
+#events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+}
+
+
+.event-listings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10% 0 10%;
+
+}
+
+.third {
+  width: 100%;
+  padding-bottom: 20px;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(246,160,45,0.9);
+  border-radius: 4px;
+
+}
+
+/* Responsive Styles */
+
+@media screen and (min-width: 600px) {
+  hr {
+      margin-top: 20px;
+  }
+  .event-listings {
+      flex-direction: row;
+      align-items: stretch;
+  }
+  .third {
+      display: flex;
+      padding: 1%;
+  }
+  .card {
+      flex-grow: 1;
+  }
+  .col-25, .col-50, input[type=submit] {
+      margin-top: 6px;
+
+      background-color: var(--main-bg-color);
+  }
+  .col-25 {
+      width: 25%;
+
+      background-color: var(--main-bg-color);
+  }
+  .col-50 {
+      width: 50%;
+
+  }
+  input[type=submit] {
+      width: 20%;
+  }
+  .fa-brands {
+      font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 800px) { 
+  h1 {
+      text-align: left;
+      margin-left: 10px;
+
+      
+  }
+  body, #message {
+      font-size: 120%;
+      
+  }
+  #links {
+      justify-content: flex-end;
+      margin: 2px;
+      padding-bottom: 5px;
+  }
+  #links a {
+      padding: 5px;
+  }
+  #about {
+      margin: 0;
+  }
+  #about-box {
+      flex-direction: row;
+  }
+  #about-box > div, #about-box > p {
+      display: flex;
+      width: 33.3%;
+      flex-basis: 0;
+      flex-grow: 1;
+      
+  }
+  #about-box {
+      margin: 0 5%;
+      
+  }
+  .circle-image {
+      width: 250px;
+      height: 250px;
+      
+  }
+  .event-listings {
+      margin: 30px 15% 0 15%;
+      
+  }
+  .container {
+      margin: 30px 15%;
+  }
+}
+
+@media screen and (min-width: 1200px) { 
+  h1 {
+      margin-left: 15px;
+
+  }
+  body, #message {
+      font-size: 140%;
+  }
+  /* .scroll {
+      scroll-margin-top: 85px;
+  } */
+  .circle-image {
+      width: 350px;
+      height: 350px;
+  }
+  .event-listings {
+      margin: 30px 20% 0 20%;
+  }
+  .container {
+      margin: 30px 20%;
+  }
+  .fa-brands {
+      font-size: 40px;
+
+  }
+}
+
+@media screen and (min-width: 1500px) { 
+  #about-box {
+    
+    margin: 0 10%;
+  }
+}
+
+#font-black {
+  color: black;
+  font-weight: bold;
+}
+
+#font-white {
+  color: white;
+}
