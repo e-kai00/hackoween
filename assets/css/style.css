@@ -64,6 +64,11 @@ h3 {
     padding-bottom: 10px;
   }
 
+  .responsive {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Preserve aspect ratio */
+}
+
   p {
     /* line-height: 2.8; */
     margin: 0; /* Adjust the margin as needed */
