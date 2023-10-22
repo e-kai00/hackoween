@@ -38,8 +38,8 @@ for (let button of buttons) {
         winState.classList.remove("win","lose", "draw");
         playerChoiceElement.classList.remove("win", "lose", "draw");
         computerChoiceElement.classList.remove("win", "lose", "draw");
-        computerChoiceElement.style.borderColor = "#000";
-        playerChoiceElement.style.borderColor = "#000";
+        //computerChoiceElement.style.borderColor = "#000";
+        //playerChoiceElement.style.borderColor = "#000";
     });
 }
 
@@ -97,13 +97,13 @@ function runGame(gameType, computerChoice) {
             winState.innerText = "DRAW";
             winState.classList.add("draw");
         } else if ((gameType === "pumpkin" && computerChoice === "death") || 
-            (gameType === "ghost" && computerChoice === "pumkin") || 
+            (gameType === "ghost" && computerChoice === "pumpkin") || 
             (gameType === "death" && computerChoice === "ghost")) {
             winState.innerText = "LOSE";
             winState.classList.add("lose");
         } else if ((gameType === "pumpkin" && computerChoice === "ghost") || 
             (gameType === "ghost" && computerChoice === "death") || 
-            (gameType === "death" && computerChoice === "pumkin")) {
+            (gameType === "death" && computerChoice === "pumpkin")) {
             winState.innerText = "WIN";
             winState.classList.add("win");
         }
@@ -161,15 +161,15 @@ function incrementScores() {
     }
 }
 
-const sweetAlertTextEndGameWon = "You Won. Here is your discount code: XXX";
+const sweetAlertTextEndGameWon = "You Won!&#10;Here is your discount code: XXX";
 
 function endGameWin() {
     Swal.fire({
-        icon:       "question",
         titleText:  "You Won!",
-        text:       sweetAlertTextEndGameWon,
-        confirmButtonColor: "#DD6B55",
+        html:       "Here is your discount code:<br /><h3>XXX</h3>",
+        confirmButtonColor: "#6E0E0A",
         confirmButtonText: "Enter Your Code",
+        background: '#D74E09',
     })
     .then(function (result) {
         if (result.value) {
