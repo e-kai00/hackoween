@@ -45,9 +45,9 @@ for (let button of buttons) {
 
 // Displays the player's choice and removes highlights from buttons activated in previous game
 function displayUserChoice(gameType) {
-    const rockChoice = document.getElementById("pumpkin");
-    const paperChoice = document.getElementById("death");
-    const scissorsChoice = document.getElementById("ghost");
+    const pumpkinChoice = document.getElementById("pumpkin");
+    const deathChoice = document.getElementById("death");
+    const ghostChoice = document.getElementById("ghost");
     if (gameType === "pumpkin") {
         playerChoiceElement.innerHTML = pumpkinSymbol;
         ghostChoice.classList.remove("active");
