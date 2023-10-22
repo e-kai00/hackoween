@@ -36,6 +36,14 @@ h3 {
     font-size: 1.563rem;
 }
 
+.swal2-html-container, .swal2-title {
+    color: white;
+}
+
+.swall-text{
+    color: red;
+ }
+
 /* Game area */
 .game-area {
     background-color: #F7F7F2;
@@ -77,7 +85,7 @@ h3 {
     height: 5rem;
     border-radius: 50%;
     background-color: #F7F7F2;
-    border: 0.313rem solid #210B2C;
+    border: 0.313rem solid #7286A0;
     margin: 0 0.625rem;
 }
 
@@ -105,7 +113,6 @@ h3 {
     width: 7.5rem;
     height: 7.5rem;
     border-radius: 50%;
-    border: 0.438rem solid #210B2C;
     margin: 0.313rem 1.25rem;
     display: flex;
     justify-content: center;
@@ -124,6 +131,7 @@ h3 {
 
 .choices .fa-regular, .choices .fa-solid {
     font-size: 4.375rem;
+    color: #210B2C;
 }
 
 /* Points tally and game results area */
@@ -156,22 +164,23 @@ h3 {
     font-size: 2.188rem;
     font-weight: 700;
     background-color: #F7F7F2;
+    color: #210B2C;
 }
 
 .win {
-    color: #11890b;
-    border-color: #000;
+    color: #6E0E0A;
+    border-color: #210B2C;
     font-family: 'Nosifer', sans-serif;
 }
 
 .lose {
-    color: #e82121;
+    color: #D74E09;
     border-color: #210B2C;
     font-family: 'Nosifer', sans-serif;
 }
 
 .draw {
-    color: #1f6e6f;
+    color: #210B2C;
     border-color: #210B2C;
     font-family: 'Nosifer', sans-serif;
 }
@@ -188,6 +197,7 @@ h3 {
     height: 5rem;
     border-radius: 20%;
     background-color: #F7F7F2;
+    color: #210B2C;
 }
 
 #information {
@@ -468,7 +478,6 @@ h3 {
         height: 3.75rem;
     }
     #win-state {
-        width: 3.75rem;
         height: 3.75rem;
         border-width: 0.188rem;
         font-size: 1.563rem;
