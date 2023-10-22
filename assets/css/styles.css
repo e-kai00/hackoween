@@ -17,7 +17,7 @@
     color: var(--main-text-color);
   }
 
-img.responsive {
+img .responsive {
     max-width: 100%; /* Make the image responsive */
     height: auto; /* Preserve aspect ratio */
 }
