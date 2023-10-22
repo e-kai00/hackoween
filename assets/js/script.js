@@ -3,9 +3,9 @@ const buttons = document.getElementsByClassName("btn");
 const computerChoiceElement = document.getElementById("computer-choice");
 const playerChoiceElement = document.getElementById("user-choice");
 const winState = document.getElementById("win-state");
-const rockSymbol = '<img src="assets/images/icons/3792037_halloween_horror_jack_pumpkin.svg">';
-const scissorsSymbol = '<img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg">';
-const paperSymbol = '<img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg">';
+const pumpkinSymbol = '<img src="assets/images/icons/3792037_halloween_horror_jack_pumpkin.svg" class="icon">';
+const ghostSymbol = '<img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg" class="icon">';
+const deathSymbol = '<img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg" class="icon">';
 const defaultSymbol = '<i class="fa-solid fa-question"></i>';
 const resetGame = document.getElementById("reset");
 let canPlay = true;
@@ -49,17 +49,17 @@ function displayUserChoice(gameType) {
     const paperChoice = document.getElementById("death");
     const scissorsChoice = document.getElementById("ghost");
     if (gameType === "pumpkin") {
-        playerChoiceElement.innerHTML = rockSymbol;
-        paperChoice.classList.remove("active");
-        scissorsChoice.classList.remove("active");
+        playerChoiceElement.innerHTML = pumpkinSymbol;
+        ghostChoice.classList.remove("active");
+        deathChoice.classList.remove("active");
     } else if (gameType === "ghost") {
-        playerChoiceElement.innerHTML = paperSymbol;
-        rockChoice.classList.remove("active");
-        scissorsChoice.classList.remove("active");
+        playerChoiceElement.innerHTML = ghostSymbol;
+        pumpkinChoice.classList.remove("active");
+        deathChoice.classList.remove("active");
     } else if (gameType === "death") {
-        playerChoiceElement.innerHTML = scissorsSymbol;
-        paperChoice.classList.remove("active");
-        rockChoice.classList.remove("active");
+        playerChoiceElement.innerHTML = deathSymbol;
+        ghostChoice.classList.remove("active");
+        pumpkinChoice.classList.remove("active");
     }
 }
 
@@ -73,14 +73,14 @@ Returns result
 function calculateComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3);
     if (computerChoice === 0) {
-        computerChoiceElement.innerHTML = rockSymbol;
+        computerChoiceElement.innerHTML = pumpkinSymbol;
         computerChoice = "pumpkin";
     } else if (computerChoice === 1) {
-        computerChoiceElement.innerHTML = paperSymbol;
-        computerChoice = "death";
-    } else if (computerChoice === 2) {
-        computerChoiceElement.innerHTML = scissorsSymbol;
+        computerChoiceElement.innerHTML = ghostSymbol;
         computerChoice = "ghost";
+    } else if (computerChoice === 2) {
+        computerChoiceElement.innerHTML = deathSymbol;
+        computerChoice = "death";
     }
     return computerChoice;
 }
