@@ -132,6 +132,13 @@ function incrementScores() {
         playerChoiceElement.classList.add("draw");
         computerChoiceElement.classList.add("draw");
     }
+
+    if (userScore === 3 || computerScore === 3) {
+        setTimeout(() => {
+            endGame();
+        }, 1000); // Delay showing the alert for 1 second (adjust as needed)
+    }
+
     if ((userScore === computerScore) && (userScore > 0)) {
         userScoreElement.classList.remove("win", "lose");
         computerScoreElement.classList.remove("win", "lose");
