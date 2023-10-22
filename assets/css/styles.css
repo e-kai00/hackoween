@@ -55,7 +55,9 @@ img.responsive {
  
 
   p {
-    line-height: 2.8;
+    /* line-height: 2.8; */
+    margin: 0; /* Adjust the margin as needed */
+    padding: 0; /* Adjust the padding as needed */
   }
 
   
