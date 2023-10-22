@@ -1,401 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-    <meta charset="utf-8">
-    <title>halloween showcase</title>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Showcase - Hackaton 2023 - Code Institute</title>
+    <meta name="description" content="Website for a Halloween Showcase Event">
+    <meta name="keywords" content="halloween showcase, event, halloween">
     <link rel="stylesheet" href="css/styles.css">
-<!--    <link rel="icon" href="favicon.ico"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserat&family=Sacramento&display=swap" rel="stylesheet">
-
-        <style>
-  /* Hamburger menu */
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Butcherman);
-
-:root {
-    --main-bg-color: #1F2833; /* Dark Blue */
-    --main-text-color: #F4A261; /* Orange */
-    --secondary-text-color: #E07A5F; /* Dark Red */
-    --accent-color: #FE5F55; /* Light Red */
-    --border-color: #F4A261; /* Orange */
-  }
-
-  body {
-    margin: 0;
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    color: var(--main-text-color);
-  }
-
-  h1 {
-    color: var(--accent-color);
-    font-size: 7.5rem;
-    margin: 50px auto 0 auto;
-    font-family: 'Butcherman', serif;
-  }
-
-  h2 {
-    color: var(--accent-color);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    padding-bottom: 10px;
-  }
-
-  h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--main-text-color);
-  }
-
-  p {
-    line-height: 2.8;
-  }
-
-  hr {
-    margin: 100px auto 100px auto;
-    border: dotted var(--secondary-text-color) 6px;
-    border-bottom: none;
-    width: 25%;
-  }
-
-  a {
-    color: var(--main-text-color);
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px 20px;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: var(--secondary-text-color);
-  }
-
-
-
-  .halloween  {
-    color: red;
-  }
-
-  .profile-halloween
-  {
-    color: var(--accent-color);
-    font-family: Georgia, serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    padding-bottom: 10px;
-  }
-
-  .bat-row {
-    width: 33%;
-    margin: 150px auto 150px auto;
-    text-align: left;
-  }
-
-  .castle-row {
-    width: 33%;
-    margin: 150px auto 150px auto;
-    text-align: right;
-  }
-
-  .spiderweb-row {
-    width: 33%;
-    margin: 150px auto 150px auto;
-    text-align: left;
-  }
-
-  .bat-img {
-    margin-right: 30px;
-    width: 25%;
-    float: left;
-  }
-
-  .castle-img {
-    margin-left: 30px;
-    width: 25%;
-    float: right;
-  }
-
-  .spiderweb-img {
-    margin-right: 30px;
-    width: 25%;
-    float: left;
-  }
-
-  .party-img {
-    width: 25%;
-  }
-
-  .p-color {
-    font-family: 'Merriweather', sans-serif;
-    color: var(--main-text-color);
-  }
-
-  .intro {
-    margin: auto;
-    color: var(--main-text-color);
-  }
-
-  .p-bat {
-    color: var(--main-text-color);
-    clear: left;
-  }
-
-  .p-castle {
-    color: var(--main-text-color);
-    clear: right;
-  }
-
-  .p-spiderweb {
-    color: var(--main-text-color);
-    clear: left;
-  }
-
-  .top-pumpkin {
-    position: absolute;
-    right: 250px;
-    top: 40px;
-    width: 12%;
-  }
-
-  .top-ghost {
-    position: absolute;
-    left: 150px;
-    top: 300px;
-    width: 15%;
-  }
-
-  .bloodline-img {
-    left: 300px;
-    bottom: 300px;
-    width: 45%;
-  }
-
-  .register-msg {
-    margin: 40px auto 60px auto;
-  }
-
-  .copyright {
-    color: var(--secondary-text-color);
-    font-size: 0.75rem;
-    padding: 10px 0;
-  }
-
-  .btn {
-    background: var(--accent-color);
-    background-image: -webkit-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
-    background-image: -moz-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
-    background-image: -ms-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
-    background-image: -o-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
-    background-image: linear-gradient(to bottom, var(--accent-color), var(--secondary-text-color));
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 8px;
-    font-family: "Arial";
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-
-  .btn:hover {
-    position: relative;
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-    text-decoration: none;
-  }
-
-  .top-container {
-    background-color: var(--main-bg-color);
-    position: relative;
-    padding-top: 100px;
-  }
-
-  .middle-container {
-    background-color: rgb(255, 255, 255);
-    margin: 100px 0;
-  }
-
-  .bottom-container {
-    background-color: var(--main-bg-color);
-    padding: 10px 0 20px;
-  }
-
-
-
-  /*
- * Made by Erik Terwan
- * 24th of November 2015
- * MIT License
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
-
-body
-{
-  margin: 0;
-  padding: 0;
-
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
-
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #cdcdcd;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-  </style>
-  <body>
-
-<!-- Hamburger menu -->
-
+</head>
+
+<body>
+    <!-- Header section -->
+    <header id="Home" class="top-container">
+            
+        <div id="main-image">
+            <img src="images/banner.png" alt="Halloween Showcase Banner" class="responsive">
+            <h1>HALLOWEEN<br>SHOWCASE</h1>
+        </div>
+
+        <img class="top-pumpkin" src="images/pumpkin.png" alt="pumpkin-img">
+        <img class="top-ghost" src="images/ghost.png" alt="ghost-img">
+           
+        <img class="bloodline-img" src="images/bloodline.png" alt="bloodline-img">
+
+    </header>  
+ <hr>
+ 
+    <!-- Navigation Links-->
+
+    <div class="nav-container">
+
+        <a href="#Home">Home</a>
+        <a href="#About">What's On?</a>
+        <a href="#PlaceToBe">Place To Be</a>
+        <a href="GamePlay.html">Game Play</a>
+        <a href="RegisterForm.html">Register</a>
+        
+    </div>
+
+    <hr>
+       
+    <!-- Annocement -->
+
+    <h3 class="middle-container2"> 
+        The Skeleton Crew - Proudely present <br> 
+        <span class="halloween">Hackaton 2023</span> 
+        <br> On Sunday 29 Oktober 2023 
+    </h3>
+    
+
+    <hr>
+
+    <h3 class="middle-container"> 
+        1 Block 1, <br>Blackrock Business Park,<br>
+         Carysfort Ave, Newtown Blackrock, <br>
+         Blackrock, Co. Dublin, <br>
+         Ierland
+    </h3>
+
+    <hr>
+
+    <h3 class="middle-container2"> 
+        Starting On <br>
+        <span class="halloween">1:00 AM </span>
+        <br>Fun Halloween experience for all ages! 
+        <br>Everyone on the crew will be dressed up. 
+        <br>You can also come dressed up, but that is not mandatory. 
+        <br>Will we see you too?
+    </h3>
+
+    <hr>
+    
+<!-- Entrenca section -->
+
+    <section id="About" class="middle-container">
+
+        <!-- About section content -->
+
+        
+            <p>Enterance Only</p>
+
+            <img class="main-image" src="images/5pound.png" alt="five-pound-img">
+            
+            <p>Join us to celebrate Halloween.</p>
+        
+
+    </section>
+
+    <hr>
+        <section class="middle-container">
+
+        <!-- About section content -->
+
+        
+        <p>Play this litle game a get 25 % off</p>
+            <a class="btn" href="GamePlay.html">Game Play</a>
+            
         
 
     </section>
