@@ -13,7 +13,6 @@ const photoFileName = [
 const imgFolder = "assets/images/img_gallery/";
 const imgFolderThumb = "assets/images//img_gallery/thumbnails/";
 let photo = "";
-// let photoThumb ="";
 
 photoFileName.map((fileName) => {
     const imgSrc = imgFolder + fileName[0];
