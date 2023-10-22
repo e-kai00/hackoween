@@ -7,7 +7,6 @@
     --dark-purple: 280, 60%, 11%; 
     --deep-blue: 242, 51%, 6%; 
     --white: 31, 100%, 85%; 
-    /* --white: 60, 24%, 96%;  */
     --grey: 214, 19%, 54%; 
     --orange: 20, 92%, 44%; 
     --red: 2, 83%, 24%; 
@@ -30,8 +29,7 @@ body {
     font-family: Poppins, sans-serif;
     margin: 0;
     text-align: center;
-    /* font-family: 'Merriweather', serif; */
-    /* color: var(--main-text-color); */
+    font-size: 1rem;    
 }
 
 h1 {
@@ -59,8 +57,7 @@ h3 {
     /* color: var(--accent-color); */
     font-family: 'Nosifer', sans-serif;
     font-size: 1.5rem;
-    font-weight: normal;
-    
+    font-weight: normal;    
     padding-bottom: 10px;
   }
 
@@ -255,13 +252,10 @@ h3 {
   }
   
   .middle-container {
-    /* background-color: var(--main-bg-color); */
     margin: 2px 0;
     color: hsl(var(--white));
-    /* color: var(--accent-color); */
-
     font-family: Nosifer, serif;
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
     font-weight: normal;
     padding-bottom: 2px;
     
@@ -354,6 +348,7 @@ h3 {
 
 }
 
+
 /* Responsive Styles */
 
 @media screen and (min-width: 600px) {
@@ -391,6 +386,7 @@ h3 {
   .fa-brands {
       font-size: 30px;
   }
+   
 }
 
 @media screen and (min-width: 800px) { 
@@ -484,4 +480,19 @@ h3 {
 
 #font-white {
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  hr {
+    margin-top: 1.2em;
+  }
 }
