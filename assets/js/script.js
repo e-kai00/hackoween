@@ -157,8 +157,16 @@ function incrementScores() {
     }
 }
 
+const sweetAlertTextEndGame = "The Game Ended";
+
 function endGame() {
-    alert("Game ended");
+    Swal.fire({
+        icon:       "question",
+        titleText:  "Game Ended",
+        text:       sweetAlertTextEndGame,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Button",
+    });
 }
 
 // Variable to display the text in the alert box
