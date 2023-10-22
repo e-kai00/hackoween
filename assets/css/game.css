@@ -7,8 +7,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    background-color: #000;
-    color: red;
+    background-color: #210B2C;
+    color: #D74E09;
     text-align: center;
 }
 
@@ -22,7 +22,7 @@ body {
 h1 {
     font-family: 'Nosifer', sans-serif;
     font-size: 2.5rem;
-    color: #4C86A8;
+    color: #D74E09;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -38,7 +38,7 @@ h3 {
 
 /* Game area */
 .game-area {
-    background-color: #F4F1DE;
+    background-color: #F7F7F2;
     box-sizing: border-box;
     width: 85%;
     border-radius: 5%;
@@ -72,12 +72,12 @@ h3 {
 }
 
 .btn {
-    color: #000;
+    color: #210B2C;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-color: #fff;
-    border: 0.313rem solid #000;
+    background-color: #F7F7F2;
+    border: 0.313rem solid #210B2C;
     margin: 0 0.625rem;
 }
 
@@ -105,12 +105,12 @@ h3 {
     width: 7.5rem;
     height: 7.5rem;
     border-radius: 50%;
-    border: 0.438rem solid #000;
+    border: 0.438rem solid #210B2C;
     margin: 0.313rem 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #F7F7F2;
 }
 
 .choice-question {
@@ -119,7 +119,7 @@ h3 {
 }
 
 .active {
-    border: 1px solid red;
+    border: 1px solid #D74E09;
 }
 
 .choices .fa-regular, .choices .fa-solid {
@@ -148,14 +148,14 @@ h3 {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    border: 0.313rem solid #000;
+    border: 0.313rem solid #210B2C;
     margin: 0.313rem 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.188rem;
     font-weight: 700;
-    background-color: #fff;
+    background-color: #F7F7F2;
 }
 
 .win {
@@ -166,20 +166,20 @@ h3 {
 
 .lose {
     color: #e82121;
-    border-color: #000;
+    border-color: #210B2C;
     font-family: 'Nosifer', sans-serif;
 }
 
 .draw {
     color: #1f6e6f;
-    border-color: #000;
+    border-color: #210B2C;
     font-family: 'Nosifer', sans-serif;
 }
 
 .points {
     font-size: 4.375rem;
     font-family: 'Nosifer', sans-serif;
-    border: 0.313rem solid #000;
+    border: 0.313rem solid #210B2C;
     margin: 0.313rem;
     display: flex;
     justify-content: center;
@@ -187,7 +187,7 @@ h3 {
     width:  4.375rem;
     height: 5rem;
     border-radius: 20%;
-    background-color: #fff;
+    background-color: #F7F7F2;
 }
 
 #information {
@@ -199,11 +199,11 @@ h3 {
 #alert, #reset {
     font-family: "Smooch Sans", sans-serif;
     font-weight: bold;
-    border: 0.125rem solid #000;
+    border: 0.125rem solid #210B2C;
     border-radius: 5%;
     font-size: 1.25rem;
     padding: 0.313rem;
-    background-color: #fff;
+    background-color: #F7F7F2;
     color: #000;
     border-radius: 8%;
 }
@@ -441,7 +441,7 @@ h3 {
         width: 6.25rem;
         height: 6.25rem;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #F7F7F2;
         border-width: 0.313rem;
         margin: 0 0.625rem;
     }
@@ -456,7 +456,7 @@ h3 {
         height: 9.375rem;
         border-radius: 50%;
         border-width: 0.438rem;
-        border-color: #000;
+        border-color: #210B2C;
     }
     .choices .fa-regular, .choices .fa-solid {
         font-size: 5.625rem;
