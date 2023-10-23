@@ -59,238 +59,241 @@ h3 {
     font-size: 1.5rem;
     font-weight: normal;    
     padding-bottom: 10px;
-  }
-
-  .responsive {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Preserve aspect ratio */
 }
 
-  p {
-    /* line-height: 2.8; */
-    margin: 0; /* Adjust the margin as needed */
-    padding: 0; /* Adjust the padding as needed */
-  }
+.responsive {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Preserve aspect ratio */
+}
+
+p {
+  /* line-height: 2.8; */
+  margin: 0; /* Adjust the margin as needed */
+  padding: 0; /* Adjust the padding as needed */
+}
 
   
   
-  hr {
-    border: dotted hsl(var(--red)) 5px;
-    /* border: dotted var(--secondary-text-color) 6px; */
-    /* box-shadow: 0px 0px 8px 3px hsl(var(--orange)); */    
-    border-bottom: none;
-    width: 50%;
-  }
+hr {
+  border: dotted hsl(var(--red)) 5px;
+  /* border: dotted var(--secondary-text-color) 6px; */
+  /* box-shadow: 0px 0px 8px 3px hsl(var(--orange)); */    
+  border-bottom: none;
+  width: 50%;
+}
   
-  a {
-    color: var(--main-text-color);
-    font-family: 'Creepster', sans-serif;
-    margin: 10px 20px;
-    text-decoration: none;
-  }
+a {
+  color: var(--main-text-color);
+  font-family: 'Creepster', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
   
-  a:hover {
-    color: var(--secondary-text-color);
-  }
+a:hover {
+  color: var(--secondary-text-color);
+}
 
-  .halloween  {
-    /* color: white; */
-    text-shadow: hsl(var(--orange)) 5px 0 10px;
-    font-family: 'Creepster', sans-serif;;
-    font-weight: bold;
-    font-size: 3.5rem;
-    letter-spacing: .1em;
-  }
+.halloween  {
+  /* color: white; */
+  text-shadow: hsl(var(--orange)) 5px 0 10px;
+  font-family: 'Creepster', sans-serif;;
+  font-weight: bold;
+  font-size: 3.5rem;
+  letter-spacing: .1em;
+}
 
-  .profile-halloween
-  {
-    color: var(--accent-color);
-    font-family: Georgia, serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    padding-bottom: 10px;
-  }
+.profile-halloween
+{
+  color: var(--accent-color);
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
 
-  .bat-row {
-    width: 33%;
-    margin: 150px auto 150px auto;
-    text-align: left;
-  }
+.bat-row {
+  width: 33%;
+  margin: 150px auto 150px auto;
+  text-align: left;
+}
   
-  .castle-row {
-    width: 33%;
-    margin: 150px auto 150px auto;
-    text-align: right;
-  }
+.castle-row {
+  width: 33%;
+  margin: 150px auto 150px auto;
+  text-align: right;
+}
 
-  .spiderweb-row {
-    width: 33%;
-    margin: 150px auto 150px auto;
-    text-align: left;
-  }
+.spiderweb-row {
+  width: 33%;
+  margin: 150px auto 150px auto;
+  text-align: left;
+}
   
-  .bat-img {
-    margin-right: 30px;
-    width: 25%;
-    float: left;
-  }
+.bat-img {
+  margin-right: 30px;
+  width: 25%;
+  float: left;
+}
   
-  .castle-img {
-    margin-left: 30px;
-    width: 25%;
-    float: right;
-  }
+.castle-img {
+  margin-left: 30px;
+  width: 25%;
+  float: right;
+}
 
-  .spiderweb-img {
-    margin-right: 30px;
-    width: 25%;
-    float: left;
-  }
+.spiderweb-img {
+  margin-right: 30px;
+  width: 25%;
+  float: left;
+}
   
-  .party-img {
-    width: 25%;
-  }
+.party-img {
+  width: 25%;
+}
   
-  .p-color {
-    font-family: 'Merriweather', sans-serif;
-    color: var(--main-text-color);
-  }
+.p-color {
+  font-family: 'Merriweather', sans-serif;
+  color: var(--main-text-color);
+}
   
-  .intro {
-    margin: auto;
-    color: var(--main-text-color);
-  }
+.intro {
+  margin: auto;
+  color: var(--main-text-color);
+}
   
-  .p-bat {
-    color: var(--main-text-color);
-    clear: left;
-  }
+.p-bat {
+  color: var(--main-text-color);
+  clear: left;
+}
   
-  .p-castle {
-    color: var(--main-text-color);
-    clear: right;
-  }
+.p-castle {
+  color: var(--main-text-color);
+  clear: right;
+}
 
-  .p-spiderweb {
-    color: var(--main-text-color);
-    clear: left;
-  }
+.p-spiderweb {
+  color: var(--main-text-color);
+  clear: left;
+}
 
-  .five-pound {
-    position: absolute;
-     
-    width: 12%;
-  }
-        
-  .top-pumpkin {
-    position: absolute;
-    right: 115px;
-    top: 40px;
-    width: 12%;
-  }
-  
-  .top-ghost {
-    position: absolute;
-    left: 115px;
-    top: 200px;
-    width: 15%;
-  }
-  
-  .bloodline-img {
-    left: 300px;
-    bottom: 300px;
-    width: 45%;
-  }
-  
-  .register-msg {
-    margin: 40px auto 60px auto;
-  }
-  
-  .copyright {
-    color: var(--secondary-text-color);
-    font-size: 0.75rem;
-    padding: 10px 0;
-  }
-  
-  .btn {
-    background-image: -webkit-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
-    background-image: -moz-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
-    background-image: -ms-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
-    background-image: -o-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
-    /* background-image: linear-gradient(to bottom, var(--accent-color), var(--secondary-text-color)); */
-    /* background-image: linear-gradient(to bottom, hsl(var(--orange)), hsl(var(--red))); */
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 8px;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    padding: 12px 20px;
-    color: hsl(var(--white));
-    background: hsl(var(--orange));
+.five-pound {
+  position: absolute;
     
+  width: 12%;
+}
+        
+.top-pumpkin {
+  position: absolute;
+  right: 115px;
+  top: 40px;
+  width: 12%;
+}
+  
+.top-ghost {
+  position: absolute;
+  left: 115px;
+  top: 200px;
+  width: 15%;
+}
+  
+.bloodline-img {
+  left: 300px;
+  bottom: 300px;
+  width: 45%;
+}
+  
+.register-msg {
+  margin: 40px auto 60px auto;
+}
+  
+.copyright {
+  color: var(--secondary-text-color);
+  font-size: 0.75rem;
+  padding: 10px 0;
+}
+  
+.btn {
+  background-image: -webkit-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
+  background-image: -moz-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
+  background-image: -ms-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
+  background-image: -o-linear-gradient(top, var(--accent-color), var(--secondary-text-color));
+  /* background-image: linear-gradient(to bottom, var(--accent-color), var(--secondary-text-color)); */
+  /* background-image: linear-gradient(to bottom, hsl(var(--orange)), hsl(var(--red))); */
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 12px 20px;
+  color: hsl(var(--white));
+  background: hsl(var(--orange));
+  
 }
 
 .btn:hover {
-    /* position: relative;
+  /* position: relative;
 
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #4d5154, #4d5154);
-    background-image: -moz-linear-gradient(top, #4d5154, #4d5154);
-    background-image: -ms-linear-gradient(top, #4d5154, #4d5154);
-      background-image: -o-linear-gradient(top, #4d5154, #4d5154);
-      background-image: linear-gradient(to bottom, #4d5154, #4d5154);
-      text-decoration: none; */
-    background-color: hsl(var(--white));
-    border: 1px solid hsl(var(--orange));
-    color: hsl(var(--orange));
-    }
-  
-  .top-container {
-    /* background-color: var(--main-bg-color); */
-    position: relative;
-    padding-top: 10px;
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #4d5154, #4d5154);
+  background-image: -moz-linear-gradient(top, #4d5154, #4d5154);
+  background-image: -ms-linear-gradient(top, #4d5154, #4d5154);
+    background-image: -o-linear-gradient(top, #4d5154, #4d5154);
+    background-image: linear-gradient(to bottom, #4d5154, #4d5154);
+    text-decoration: none; */
+  background-color: hsl(var(--white));
+  border: 1px solid hsl(var(--orange));
+  color: hsl(var(--orange));
   }
   
-  .middle-container {
-    margin: 2px 0;
-    color: hsl(var(--white));
-    font-family: Nosifer, serif;
-    /* font-size: 1.75rem; */
-    font-weight: normal;
-    padding-bottom: 2px;
-    
-  }
+.top-container {
+  /* background-color: var(--main-bg-color); */
+  position: relative;
+  padding-top: 10px;
+}
+  
+.middle-container {
+  margin: 2px 0;
+  color: hsl(var(--white));
+  font-family: Nosifer, serif;
+  /* font-size: 1.75rem; */
+  font-weight: normal;
+  padding-bottom: 2px;    
+}
 
-  .middle-container2 {
-    /* background-color: var(--main-bg-color); */
-    margin: 2px 0;
-    color: var(main-text-color);
-    font-family: Poppins,sans-serif;
-    font-size: 1.15rem;
-    font-weight: normal;
-    padding-bottom: 2px;
-    
-  }
+.game-section {
+  width: 80%;
+  margin: auto;
+}
 
- .nav-container {
-    color: var(--accent-color);
-    font-family: 'Nosifer', sans-serif;
-    font-size: 1.5rem;
-    font-weight: normal;
-    /* background-color: var(--main-bg-color); */
-    margin: 2px 0;
-  }
+.middle-container2 {
+  /* background-color: var(--main-bg-color); */
+  margin: 2px 0;
+  color: var(main-text-color);
+  font-family: Poppins,sans-serif;
+  font-size: 1.15rem;
+  font-weight: normal;
+  padding-bottom: 2px;
+  
+}
+
+.nav-container {
+  color: var(--accent-color);
+  font-family: 'Nosifer', sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  /* background-color: var(--main-bg-color); */
+  margin: 2px 0;
+}
  
-
-  .bottom-container {
-    background-color: var(--main-bg-color);
-    padding: 10px 0 20px;
-  }
+.bottom-container {
+  background-color: var(--main-bg-color);
+  padding: 10px 0 20px;
+}
   
-  /* Apply CSS styles to the main-image div */
-  #main-image {
-    position: relative; /* Create a positioning context */
-    text-align: center; /* Center the content within the div */
+/* Apply CSS styles to the main-image div */
+#main-image {
+  position: relative; /* Create a positioning context */
+  text-align: center; /* Center the content within the div */
 }
 
 #links {
@@ -301,15 +304,16 @@ h3 {
 
 #links a {
   padding: 5px;
+}
 
  /* Add a media query for responsiveness */
- @media screen and (max-width: 600px) {
+ /* @media screen and (max-width: 600px) {
     h1 {
-        font-size: 2.5em; /* Reduce font size on smaller screens */
+        font-size: 2.5em; 
         background-color: var(--main-bg-color);
     }
-}
-}
+} */
+
 #nav-font {
   font-size: 2.5em; 
 }
@@ -494,5 +498,10 @@ h3 {
 
   hr {
     margin-top: 1.2em;
+  }
+
+  .middle-container2 {
+    padding-left: .3em;
+    padding-right: .3em;
   }
 }
