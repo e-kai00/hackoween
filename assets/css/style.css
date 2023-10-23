@@ -337,6 +337,7 @@ a:hover {
 .bottom-container {
   background-color: var(--main-bg-color);
   padding: 10px 0 20px;
+  margin-top: 3em;
 }
   
 /* Apply CSS styles to the main-image div */
@@ -397,10 +398,24 @@ a:hover {
   /* background-color: rgba(246,160,45,0.9); */
   border-radius: 4px;
   font-size: 1rem;
-
-
 }
 
+/* ---------------------Footer */
+.footer {
+  text-align: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: red;
+  color: #ffdab3;
+}
+
+.footer,
+.footer a,
+.footer p {
+  color: #ffd9b3;
+}
+/* -----------------end Footer */
 
 /* Responsive Styles */
 
