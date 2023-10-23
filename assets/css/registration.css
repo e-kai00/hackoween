@@ -138,6 +138,7 @@ input[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    text-decoration: none;
     background-color: red;
     color: #ffd9b3;
     text-decoration: none;
@@ -147,6 +148,7 @@ input[type="submit"] {
 }
 
 .button-link:hover {
+    text-decoration: none;
     background-color: #e89772;
 }
 
@@ -155,8 +157,8 @@ input[type="submit"]:hover {
 }
 
 .required::after {
-    content: "*";
-    color: red;
+    content: " *";
+    color: #ffdab3;
 }
 
 .required-label::after {
