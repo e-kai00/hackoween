@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
       audio.play();
   
       setTimeout(function() {
-        window.location.href = "GamePlay.html";
+        window.location.href = "/challenge.html";
       }, 4000);
     });
   });
