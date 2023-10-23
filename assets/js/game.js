@@ -133,14 +133,14 @@ function incrementScores() {
         computerChoiceElement.classList.add("draw");
     }
 
-    if (userScore === 3) {
+    if (userScore === 9) {
         setTimeout(() => {
             endGameWin();
-        }, 1000); // Delay showing the alert for 1 second (adjust as needed)
-    } else if (computerScore === 3) {
+        }, 200); // Delay showing the alert for 1 second (adjust as needed)
+    } else if (computerScore === 9) {
         setTimeout(() => {
             endGameLose();
-        }, 1000); // Delay showing the alert for 1 second (adjust as needed)
+        }, 200); // Delay showing the alert for 1 second (adjust as needed)
     }
 
     if ((userScore === computerScore) && (userScore > 0)) {
@@ -168,12 +168,12 @@ function endGameWin() {
         titleText:  "You Won!",
         html:       "Here is your discount code:<br /><h3>XXX</h3>",
         confirmButtonColor: "#6E0E0A",
-        confirmButtonText: "Enter Your Code",
+        confirmButtonText: "Use It Here",
         background: '#D74E09',
     })
     .then(function (result) {
         if (result.value) {
-            window.location = "RegisterForm.html";
+            window.location = "registration.html";
         }
     });
     // Reset the game state
@@ -194,11 +194,11 @@ const sweetAlertTextEndGameLost = "You Lost. Would you like to play again?";
 
 function endGameLose() {
     Swal.fire({
-        icon:       "question",
         titleText:  "You Lost!",
         text:       sweetAlertTextEndGameLost,
-        confirmButtonColor: "#DD6B55",
+        confirmButtonColor: "#D74E09",
         confirmButtonText: "Play Again",
+        background: '#6E0E0A',
     });
     // Reset the game state
     document.getElementById("user-score").innerText = "0";
@@ -215,7 +215,7 @@ function endGameLose() {
 }
 
 // Variable to display the text in the alert box
-const sweetAlertText = "Select your choice from the 3 buttons, 'Pumpkin', 'Ghost', or 'Death'.\n  The computer will pick a random choice.\n  Death beats Pumpkin.\n  Ghost beats Death.\n  Pumpkin beats Ghost.";
+const sweetAlertText = "Select your choice from the 3 buttons, 'Pumpkin', 'Ghost', or 'Death'.\n  The computer will pick a random choice.\n  Death beats Pumpkin.\n  Ghost beats Death.\n  Pumpkin beats Ghost.\n The first to 9 points wins the game and a discount code for the event!";
 
 // Sets the content for the sweetalert2 box
 function howToPlay() {
@@ -223,8 +223,9 @@ function howToPlay() {
         icon:       "question",
         titleText:  "How to Play",
         text:       sweetAlertText,
-        confirmButtonColor: "#DD6B55",
+        confirmButtonColor: "#6E0E0A",
         confirmButtonText: "Let's Play!",
+        background: '#7286A0',
     });
 }
 

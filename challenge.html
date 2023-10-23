@@ -10,7 +10,6 @@
     <meta name="keywords" content="halloween challenge pumpkin ghost death reaper">
 
     <link rel="stylesheet" href="assets/css/game.css">
-    <link rel="stylesheet" href="sweetalert2.min.css">
    
     <title>Halloween Challenge</title>
 
@@ -18,32 +17,34 @@
 
 <body>
 
-    <h1>Can you beat Evil?</h1>
+    <h1>Overcome Evil</h1>
+    <p>Can you beat Evil in a game of ghouls?</p>
+    <p>Get 9 points for a nice surprise!</p>
 
     <!-- Game area to hold the game sections -->
     <div class="challenge-area">
 
         <!-- Buttons to select player option for game -->
-        <div class="controls-area"><h2>Choose Your Ghoul</h2>
+        <div class="controls-area"><h3>Choose Your Ghoul</h3>
             <div class="weapons">
                 
                 <div class="thirds">
                     <button type="button" class="btn" id="ghost" aria-label="ghost-button">
-                        <img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg" class="icon">
+                        <img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg" class="icon" alt="Ghost Icon">
                     </button>
-                    <h3>Ghost</h3>
+                    <p>Ghost</p>
                 </div>
                 <div class="thirds">
                     <button type="button" class="btn" id="pumpkin" aria-label="pumpkin-button">
-                        <img src="assets/images/icons/3792037_halloween_horror_jack_pumpkin.svg" class="icon">
+                        <img src="assets/images/icons/3792037_halloween_horror_jack_pumpkin.svg" class="icon" alt="Pumpkin Icon">
                     </button>
-                    <h3>Pumpkin</h3>
+                    <p>Pumpkin</p>
                 </div>
                 <div class="thirds">
                     <button type="button" class="btn" id="death" aria-label="death-button">
-                        <img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg" class="icon">
+                        <img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg" class="icon" alt="Death Icon">
                     </button>
-                    <h3>Death</h3>
+                    <p>Death</p>
                 </div>
             </div>
         </div>
@@ -54,13 +55,13 @@
                 <div class="choices" id="user-choice">
                     <i class="icon fa-solid fa-question"></i>
                 </div>
-                <h3>You</h3>
+                <h4>You</h4>
             </div>
             <div class="halves">
                 <div class="choices" id="computer-choice">
                     <i class="icon fa-solid fa-question"></i>
                 </div>
-                <h3>Evil</h3>
+                <h4>Evil</h4>
             </div>
         </div>
         
@@ -71,19 +72,19 @@
                     <div>
                         <span class="points" id="user-score">0</span>
                     </div>
-                    <h3>Your Score</h3>
+                    <p>Your Points</p>
                 </div>
                 <div class="thirds">
                     <div id="win-state">
                         <i class="fa-solid fa-question"></i>
                     </div>
-                    <h3>Game Result</h3>
+                    <p>Result</p>
                 </div>
                 <div class="thirds">
                     <div>
                         <span class="points" id="computer-score">0</span>
                     </div>
-                    <h3>Evil Score</h3>
+                    <p>Evil's Points</p>
                 </div>
             </div>
         </div>
@@ -91,10 +92,10 @@
         <!-- Area to hold buttons to reset the game and scores and show an alert informing user how to play the game -->
         <div id="information">
             <div>
-                <button type="button" class="button" id="alert" onclick="howToPlay()">How to Play</button>
+                <button type="button" class="button" id="alert" onclick="howToPlay()">Rules</button>
             </div>
             <div>
-                <button type="reset" class="button" id="reset">Reset Game</button>
+                <button type="reset" class="button" id="reset">Reset</button>
             </div>
         </div>
 
