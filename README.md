@@ -14,7 +14,6 @@ The site is designed to promote a fictional Halloween event in Dublin, Ireland, 
 
 1. [**Site Overview**](#site-overview)
 1. [**Planning stage**](#planning-stage)
-    - [**_Wireframes_**](#wireframes)
     - [**_Target Audiences_**](#target-audiences)
     - [**_User Stories_**](#user-stories)
     - [**_Site Aims_**](#site-aims)
@@ -39,14 +38,6 @@ The site is designed to promote a fictional Halloween event in Dublin, Ireland, 
 ## **Planning stage**
 
 A series of huddles were organised on the Slack platform and the team quickly decided on a name, 'Skeleton Crew' and a rough idea for a project. It was decided to try and assign tasks on different pages to reduce the likelihood of conflicts. A project board was set up to coordinate tasks to be completed. As the project progressed, and the pages were created, typography, colors and images were agreed upon and applied site wide.
-
-### **Wireframes:**
-
-Wireframes were used to map, out the design of the site on desktop and mobile devices.
-
-![Desktop Wireframe](/docs/url.jpg)
-
-![Mobile Wireframe](/docs/url.jpg)
 
 ---
 
@@ -97,7 +88,9 @@ Wireframes were used to map, out the design of the site on desktop and mobile de
 
 -   The home page serves as the event page, providing times, dates and details of the event.
 
-![Home Page](/docs/url.jpg)
+![Home Page](/docs/features-img/home-banner.png)
+![Home Page](/docs/features-img/game-button.png)
+![Home Page](/docs/features-img/home-agenda.png)
 
 #### _Gallery Page:_
 
