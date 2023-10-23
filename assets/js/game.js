@@ -1,11 +1,11 @@
 // Declare global variables
-const buttons = document.getElementsByClassName("btn");
+const buttons = document.getElementsByClassName("game-btn");
 const computerChoiceElement = document.getElementById("computer-choice");
 const playerChoiceElement = document.getElementById("user-choice");
 const winState = document.getElementById("win-state");
-const pumpkinSymbol = '<img src="assets/images/icons/3792037_halloween_horror_jack_pumpkin.svg" class="icon">';
-const ghostSymbol = '<img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg" class="icon">';
-const deathSymbol = '<img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg" class="icon">';
+const pumpkinSymbol = '<img src="assets/images/icons/3792037_halloween_horror_jack_pumpkin.svg" class="game-icon">';
+const ghostSymbol = '<img src="assets/images/icons/3792018_casper_ghost_halloween_evil.svg" class="game-icon">';
+const deathSymbol = '<img src="assets/images/icons/3792006_grim_death_halloween_reaper.svg" class="game-icon">';
 const defaultSymbol = '<i class="fa-solid fa-question"></i>';
 const resetGame = document.getElementById("reset");
 let canPlay = true;

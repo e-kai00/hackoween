@@ -14,7 +14,6 @@ The site is designed to promote a fictional Halloween event in Dublin, Ireland, 
 
 1. [**Site Overview**](#site-overview)
 1. [**Planning stage**](#planning-stage)
-    - [**_Wireframes_**](#wireframes)
     - [**_Target Audiences_**](#target-audiences)
     - [**_User Stories_**](#user-stories)
     - [**_Site Aims_**](#site-aims)
@@ -39,14 +38,6 @@ The site is designed to promote a fictional Halloween event in Dublin, Ireland, 
 ## **Planning stage**
 
 A series of huddles were organised on the Slack platform and the team quickly decided on a name, 'Skeleton Crew' and a rough idea for a project. It was decided to try and assign tasks on different pages to reduce the likelihood of conflicts. A project board was set up to coordinate tasks to be completed. As the project progressed, and the pages were created, typography, colors and images were agreed upon and applied site wide.
-
-### **Wireframes:**
-
-Wireframes were used to map, out the design of the site on desktop and mobile devices.
-
-![Desktop Wireframe](/docs/url.jpg)
-
-![Mobile Wireframe](/docs/url.jpg)
 
 ---
 
@@ -95,21 +86,53 @@ Wireframes were used to map, out the design of the site on desktop and mobile de
 
 #### _Home Page:_
 
--   The home page serves as the event page, providing times, dates and details of the event.
+- The home page serves as the event page, providing times, dates and details of the event.
 
-![Home Page](/docs/url.jpg)
+  - A captivating main banner welcomes visitors with a spooky ghost, a grinning pumpkin, and the word "Halloween," setting the eerie tone for the Halloween-themed website.
+  ![Home Page](/docs/features-img/home-banner.png)
+
+  <br>
+
+  -  An enticing invitation to play a game. When users press the button, it triggers an "evil laugh" sound before directing them to the game page.
+  ![Home Page](/docs/features-img/game-button.png)
+
+  <br>
+
+  - Discover the exciting party details in three themed boxes, each presenting information about your Halloween party agendas. Users can easily see the essential event information.
+  ![Home Page](/docs/features-img/home-agenda.png)
+
+  <br>
 
 #### _Gallery Page:_
 
--
+- Spooktacular Snapshots Gallery
 
-![Gallery Page](/docs/url.jpg)
+  - Explore our "Spooktacular Snapshots" gallery, where you can dive into a collection of ghoulishly good photos, capturing spine-tingling memories from our past Halloween events.
+  ![Photo gallery](/docs/features-img/gallery.png)
+
+  <br>
+
+  -  Interactive design as you hover over photo thumbnails. They'll brighten and slightly increase in size, offering a dynamic and engaging way to preview the images.
+  ![Photo gallery](/docs/features-img/gallery-hover.png)
+
+  <br>
+
+  - When you open a photo, you'll find a mini-gallery at the bottom of the page. This feature allows you to quickly navigate through all the available photos without having to go back to the main gallery, enhancing the user's viewing experience.
+  ![Photo gallery](/docs/features-img/gallery-open-photo.png)
+
+  <br>
+  - photo gallery is fully mobile-responsive, ensuring that visitors can enjoy the spooky snapshots on any device, be it a computer, tablet, or smartphone, without compromising quality or functionality.  
+
+  ![Photo gallery](/docs/features-img/gallery-mobile.png)
+  
+  <br>
+
 
 #### _Game Page:_
 
 -   The game page provides users with a Halloween Challenge, playing a game of rock, paper, scissors, with Halloween themed icons. In this game, Pumkin beats Ghost (pumpkins ward off spirits), Ghost beats Death (you can't kill a ghost) and Death beats Pumpkin (by chopping it up).  When the user selects a ghoul from the top three icons, their choice is displayed below. After a short timeout, the computer's (Evil's) randomly selected choice is displayed. If there is a win or loss state, the points are incremented accordingly, along with a message reinforcing the state. Otherwise a 'draw' message is displayed.  When the player recahes a score of 9, an alert box is displayed, informing the user they have one and presenting them with a code and a link to the registration page.  If the computer reaches 9 first, a box appears telling the user they have lost, with an invitation to try again. At either point, the game is reset.  Below the game are two buttons, one of which explains the rules and the other resets the game.
 
-![Game Page](/docs/url.jpg)
+![Game Page](/docs/game.jpg.jpg)
 
 #### _Registration Page:_
 
@@ -184,7 +207,7 @@ The following technologies were employed in the creation of the site:
 -   CSS
 -   JS
 -   SweetAlert2
--   Balsamiq Wireframes
+-   Fancybox (for photo gallery)
 -   ChatGPT
 -   Github
 
@@ -194,7 +217,21 @@ The following technologies were employed in the creation of the site:
 
 ### **Honorable mentions**
 
--   The Team.  List github accounts?
+Members of "The Skeleton Crew":
+
+- [Antonio-Claudio](https://github.com/Balkaneros91)
+
+- [Jewel Kenyah-Damptey](https://github.com/Apostle01)
+
+- [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandoli)
+
+- [James Evans](https://github.com/broken-helix)
+
+- [Katerina](https://github.com/e-kai00)
+
+- [Filip Van Elslande](https://github.com/Harmonica-Men) 
+ (Scrum Leader)
+
 
 ---
 
@@ -206,8 +243,12 @@ The following technologies were employed in the creation of the site:
 
 -   [Sweet Alert](https://sweetalert2.github.io/).
 
--   [Balsamiq Wireframes](https://balsamiq.com/wireframes/).
-
 -   [Iconset: Materia Halloween free](https://www.iconfinder.com/iconsets/materia-halloween-free/).
 
 -   [Game Icons Author: Icojam](https://www.iconfinder.com/Icojam/).
+
+-   [Photos: pixels.com](https://www.pexels.com/).
+
+-   [Sound for the game button: soundbible.com](https://soundbible.com/2055-Evil-Laugh-Male-6.html#).
+
+
