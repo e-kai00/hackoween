@@ -10,13 +10,62 @@
     <title>Boos & Brews Ball | Hackaton 2023 | Code Institute</title>
     <meta name="description" content="Website for a Halloween Showcase Event">
     <meta name="keywords" content="halloween showcase, event, halloween">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+           <!-- Navigation -->
+           <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo">
+                        <span style="color: #ffd9b3;">B</span><span style="color: #000000;">o</span><span
+                            style="color: rgb(170, 48, 48);">o</span><span style="color: #000000;">s</span><span
+                            style="color: #ffd9b3;"> </span><span style="color: #000000;">&</span><span
+                            style="color: #ffd9b3;"> </span><span style="color: #000000;">B</span><span
+                            style="color: #ffd9b3;">r</span><span style="color: #000000;">e</span><span
+                            style="color: rgb(170, 48, 48);">d</span><span style="color: #000000;">s</span><span
+                            style="color: #ffd9b3;"> </span><span style="color: #000000;">B</span><span
+                            style="color: #ffd9b3;">a</span><span style="color: rgb(170, 48, 48);">l</span><span
+                            style="color: #ffd9b3;">l</span>
+                    </div>
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav ml-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="photo-gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registration.html">Registration</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
     <!-- Header section -->
     <header id="Home" class="top-container">
-        <!-- Main banner and title -->
+
+         <!-- Main banner and title -->
         <div id="main-image">
             <img src="images/banner.png" alt="Halloween Showcase Banner" class="responsive">
             <h1>HALLOWEEN</h1>
@@ -120,15 +169,19 @@
     </section>
     <hr>
 
-    <!-- Footer section -->
     <footer class="bottom-container">
-        <!-- Social Network Links -->
         <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page"><i class="fa-brands fa-square-facebook"></i></a>
         <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page"><i class="fa-brands fa-square-twitter"></i></a>
         <a href="https://www.flickr.com" target="_blank" rel="noopener" aria-label="Visit our Flickr page"><i class="fa-brands fa-flickr"></i></a>
         <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page"><i class="fa-brands fa-square-instagram"></i></a>
         <a href="https://www.tumblr.com" target="_blank" rel="noopener" aria-label="Visit our Tumblr page"><i class="fa-brands fa-square-tumblr"></i></a>
     </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Scripts to add icons for Social Media links -->
     <script src="https://kit.fontawesome.com/0ac18b6588.js" crossorigin="anonymous"></script>
     <script src="assets/js/scripts.js"></script>
