@@ -61,6 +61,55 @@ h3 {
     padding-bottom: 10px;
 }
 
+/* ------------------------Navbar */
+.logo {
+  font-family: Creepster, sans-serif;
+  text-shadow: orange 5px 0 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  font-size: 1rem;
+  color: #ffdab3;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffdab3;
+}
+
+nav a.nav-link,
+nav a.nav-link:hover {
+  color: #f4a361;
+}
+
+nav a:hover,
+nav a.nav-link,
+nav a.nav-link:hover {
+  font-size: 1rem;
+  /* Adjust the font size as needed */
+  color: #f4a361;
+}
+
+.navbar-toggler {
+  font-size: 1rem;
+  border-color: #ffd9b3;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 1rem;
+  color: #ffdab3;
+}
+
+
+
 .responsive {
   max-width: 100%; /* Make the image responsive */
   height: auto; /* Preserve aspect ratio */
