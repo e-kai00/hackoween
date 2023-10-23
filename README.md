@@ -207,7 +207,7 @@ The following technologies were employed in the creation of the site:
 -   CSS
 -   JS
 -   SweetAlert2
--   Balsamiq Wireframes
+-   Fancybox (for photo gallery)
 -   ChatGPT
 -   Github
 
@@ -217,7 +217,21 @@ The following technologies were employed in the creation of the site:
 
 ### **Honorable mentions**
 
--   The Team.  List github accounts?
+Members of "The Skeleton Crew":
+
+- [Antonio-Claudio](https://github.com/Balkaneros91)
+
+- [Jewel Kenyah-Damptey](https://github.com/Apostle01)
+
+- [Carlos Felipe Capobianco Sandoli](https://github.com/felipesandoli)
+
+- [James Evans](https://github.com/broken-helix)
+
+- [Katerina](https://github.com/e-kai00)
+
+- [Filip Van Elslande](https://github.com/Harmonica-Men) 
+ (Scrum Leader)
+
 
 ---
 
@@ -229,8 +243,12 @@ The following technologies were employed in the creation of the site:
 
 -   [Sweet Alert](https://sweetalert2.github.io/).
 
--   [Balsamiq Wireframes](https://balsamiq.com/wireframes/).
-
 -   [Iconset: Materia Halloween free](https://www.iconfinder.com/iconsets/materia-halloween-free/).
 
 -   [Game Icons Author: Icojam](https://www.iconfinder.com/Icojam/).
+
+-   [Photos: pixels.com](https://www.pexels.com/).
+
+-   [Sound for the game button: soundbible.com](https://soundbible.com/2055-Evil-Laugh-Male-6.html#).
+
+
