@@ -86,17 +86,47 @@ A series of huddles were organised on the Slack platform and the team quickly de
 
 #### _Home Page:_
 
--   The home page serves as the event page, providing times, dates and details of the event.
+- The home page serves as the event page, providing times, dates and details of the event.
 
-![Home Page](/docs/features-img/home-banner.png)
-![Home Page](/docs/features-img/game-button.png)
-![Home Page](/docs/features-img/home-agenda.png)
+  - A captivating main banner welcomes visitors with a spooky ghost, a grinning pumpkin, and the word "Halloween," setting the eerie tone for the Halloween-themed website.
+  ![Home Page](/docs/features-img/home-banner.png)
+
+  <br>
+
+  -  An enticing invitation to play a game. When users press the button, it triggers an "evil laugh" sound before directing them to the game page.
+  ![Home Page](/docs/features-img/game-button.png)
+
+  <br>
+
+  - Discover the exciting party details in three themed boxes, each presenting information about your Halloween party agendas. Users can easily see the essential event information.
+  ![Home Page](/docs/features-img/home-agenda.png)
+
+  <br>
 
 #### _Gallery Page:_
 
--
+- Spooktacular Snapshots Gallery
 
-![Gallery Page](/docs/url.jpg)
+  - Explore our "Spooktacular Snapshots" gallery, where you can dive into a collection of ghoulishly good photos, capturing spine-tingling memories from our past Halloween events.
+  ![Photo gallery](/docs/features-img/gallery.png)
+
+  <br>
+
+  -  Interactive design as you hover over photo thumbnails. They'll brighten and slightly increase in size, offering a dynamic and engaging way to preview the images.
+  ![Photo gallery](/docs/features-img/gallery-hover.png)
+
+  <br>
+
+  - When you open a photo, you'll find a mini-gallery at the bottom of the page. This feature allows you to quickly navigate through all the available photos without having to go back to the main gallery, enhancing the user's viewing experience.
+  ![Photo gallery](/docs/features-img/gallery-open-photo.png)
+
+  <br>
+  - photo gallery is fully mobile-responsive, ensuring that visitors can enjoy the spooky snapshots on any device, be it a computer, tablet, or smartphone, without compromising quality or functionality.  
+
+  ![Photo gallery](/docs/features-img/gallery-mobile.png)
+  
+  <br>
+
 
 #### _Game Page:_
 
