@@ -109,7 +109,7 @@ Wireframes were used to map, out the design of the site on desktop and mobile de
 
 -   The game page provides users with a Halloween Challenge, playing a game of rock, paper, scissors, with Halloween themed icons. In this game, Pumkin beats Ghost (pumpkins ward off spirits), Ghost beats Death (you can't kill a ghost) and Death beats Pumpkin (by chopping it up).  When the user selects a ghoul from the top three icons, their choice is displayed below. After a short timeout, the computer's (Evil's) randomly selected choice is displayed. If there is a win or loss state, the points are incremented accordingly, along with a message reinforcing the state. Otherwise a 'draw' message is displayed.  When the player recahes a score of 9, an alert box is displayed, informing the user they have one and presenting them with a code and a link to the registration page.  If the computer reaches 9 first, a box appears telling the user they have lost, with an invitation to try again. At either point, the game is reset.  Below the game are two buttons, one of which explains the rules and the other resets the game.
 
-![Game Page](/docs/url.jpg)
+![Game Page](/docs/game.jpg.jpg)
 
 #### _Registration Page:_
 
