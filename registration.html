@@ -5,24 +5,577 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" XXXX ??? ">
-    <meta name="keywords" content=" XXXX ??? ">
+    <meta name="description"
+        content="A thrilling Halloween Showcase filled with spooky surprises and exciting events. Join us for a frightfully fun experience!">
+    <meta name="keywords"
+        content="Halloween, Showcase, event, spooky, fun, thrilling, ghosts, pumpkins, witches, bats, spiders, skeletons, black cats, vampires, zombies, werewolves">
 
-    <title>SUBJECT ???</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Halloween Showcase</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap dropdowns) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 
 <style>
+    *,
+    ::after,
+    ::before {
+        box-sizing: content-box;
+    }
+
     body {
+        font-family: Arial, sans-serif;
         background-color: orange;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Header */
+    nav {
+        width: 100%;
+        /* Set the width to 100% */
+        max-width: 1400px;
+        /* Set a maximum width if needed */
+        margin: 0 auto;
+        /* Center the header */
+    }
+
+    header {
+        background-color: #222;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .logo {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    a .nav-link {
+        color: red;
+    }
+
+
+    /* Form */
+
+    form {
+        width: 500px;
+        padding: 50px;
+        margin: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Form container styles */
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Left section styles */
+    .form-left {
+        width: 50%;
+        /* Adjust the width as needed */
+    }
+
+    /* Right section styles */
+    .form-right {
+        width: 35%;
+        /* Adjust the width as needed */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    .required::after {
+        content: "*";
+        color: red;
+    }
+
+    .required-label::after {
+        content: " (Required)";
+        color: #666;
+        font-size: 12px;
+    }
+
+    .symbol-icon {
+        margin-right: 5px;
+    }
+
+    .popup-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+
+    .ghost {
+        width: 200px;
+        height: 300px;
+        background-color: white;
+        border-radius: 50%;
+        position: relative;
+        animation: floatUpDown 1s ease-in-out infinite alternate;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .eye {
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 60px;
+        left: 70px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .eye.right {
+        left: 100px;
+    }
+
+    .mouth {
+        width: 80px;
+        height: 20px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 140px;
+        left: 60px;
+    }
+
+    .tongue {
+        width: 40px;
+        height: 60px;
+        background-color: #e60000;
+        border-radius: 50%;
+        position: absolute;
+        top: 160px;
+        left: 90px;
+        transform: rotate(15deg);
+    }
+
+    @keyframes floatUpDown {
+
+        0%,
+        100% {
+            transform: translate(0, 0) rotate(0);
+        }
+
+        25% {
+            transform: translate(0, -20px) rotate(100deg);
+        }
+
+        50% {
+            transform: translate(100px, 0) rotate(0);
+        }
+
+        75% {
+            transform: translate(0, -10px) rotate(-100deg);
+        }
+    }
+
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        width: 100%;
+        /* Set the width to 100% */
+        max-width: 1400px;
+        /* Set a maximum width if needed */
+        margin: 0 auto;
+        /* Center the footer */
+    }
+
+    /* Media queries */
+
+    /* Adjust styles for smaller screens */
+    @media (max-width: 768px) {
+        .form-container {
+            flex-direction: column;
+        }
+
+        .form-left,
+        .form-right {
+            width: 100%;
+        }
+
+        .popup-container {
+            height: 100%;
+        }
+    }
+
+    /* Adjust styles for larger screens */
+    @media (min-width: 992px) {
+        .form-container {
+            flex-direction: row;
+        }
+
     }
 </style>
 
 <body>
-    <h1 class="page-header">Hello Halloween!</h1>
-    <p class="first-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatum itaque amet a
-        repellendus quam
-        dignissimos aspernatur architecto, reiciendis dolore, incidunt omnis perferendis quaerat quas.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse unde doloremque eum pariatur deleniti cumque.</p>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <span style="color: red;">H</span><span style="color: black;">a</span><span
+                        style="color: purple;">l</span><span style="color: green;">l</span><span
+                        style="color: red;">o</span><span style="color: black;">w</span><span
+                        style="color: purple;">e</span><span style="color: green;">e</span><span
+                        style="color: red;">n</span>
+                    <span style="color: black;"> S</span><span style="color: purple;">h</span><span
+                        style="color: green;">o</span><span style="color: red;">w</span><span
+                        style="color: black;">c</span><span style="color: purple;">a</span><span
+                        style="color: green;">s</span><span style="color: red;">e</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ml-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <!-- <main class="container">
+        <form id="registration-form">
+            <label for="fname" class="required">First Name</label><br>
+            <input type="text" id="fname" name="fname" class="required" required><br>
+
+            <label for="lname" class="required">Last Name</label><br>
+            <input type="text" id="lname" name="lname" class="required" required><br>
+
+            <label for="email" class="required">Email</label><br>
+            <input type="email" id="email" name="email" class="required" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                oninput="this.setCustomValidity('')"><br>
+
+            <label for="pronouns">Pronouns (optional)</label><br>
+            <select id="pronouns" name="pronouns">
+                <option value="he/him">He/Him</option>
+                <option value="she/her">She/Her</option>
+                <option value="they/them">They/Them</option>
+            </select><br><br>
+
+            <label for="favorite-symbol">Favorite Halloween Symbol (optional)</label><br>
+            <hr>
+
+            <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="ghost">
+            <label for="favorite-symbol" class="symbol-label"><i class="symbol-icon fas fa-ghost"></i>Ghost</label><br>
+
+            <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="jack-o-lantern">
+            <label for="favorite-symbol" class="symbol-label"><i
+                    class="symbol-icon fas fa-pumpkin"></i>Jack-o'-lantern</label><br>
+
+            <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="witch">
+            <label for="favorite-symbol" class="symbol-label"><i
+                    class="symbol-icon fas fa-hat-wizard"></i>Witch</label><br>
+
+            <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="bat">
+            <label for="favorite-symbol" class="symbol-label"><i class="symbol-icon fas fa-bat"></i>Bat</label><br>
+
+            <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="spider">
+            <label for="favorite-symbol" class="symbol-label"><i
+                    class="symbol-icon fas fa-spider"></i>Spider</label><br>
+
+            <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="skeleton">
+            <label for="favorite-symbol" class="symbol-label"><i
+                    class="symbol-icon fas fa-skull"></i>Skeleton</label><br>
+
+            <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="black-cat">
+            <label for="favorite-symbol" class="symbol-label"><i class="symbol-icon fas fa-cat"></i>Black
+                cat</label><br>
+
+            <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="vampire">
+            <label for="favorite-symbol" class="symbol-label"><i
+                    class="symbol-icon fas fa-vampire"></i>Vampire</label><br>
+
+            <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="zombie">
+            <label for="favorite-symbol" class="symbol-label"><i
+                    class="symbol-icon fas fa-walking"></i>Zombie</label><br>
+
+            <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="werewolf">
+            <label for="favorite-symbol" class="symbol-label"><i
+                    class="symbol-icon fas fa-wolf-pack-battalion"></i>Werewolf</label><br><br>
+
+            <label for="promo-code">Promo Code (winner gets a discount code !!!)</label><br>
+            <input type="text" id="promo-code" name="promo-code"><br><br>
+
+            <input type="submit" value="Submit"><br><br>
+
+            <p class="required-label">Fields marked with * are required.</p>
+        </form>
+    </main> -->
+
+
+    <!-- Main TWO -->
+    <main class="container my-4">
+        <form id="registration-form" class="form-container">
+            <!-- Labels and input fields -->
+            <div class="form-left">
+                <label for="fname" class="required">First Name</label><br>
+                <input type="text" id="fname" name="fname" class="required" required><br>
+
+                <label for="lname" class="required">Last Name</label><br>
+                <input type="text" id="lname" name="lname" class="required" required><br>
+
+                <label for="email" class="required">Email</label><br>
+                <input type="email" id="email" name="email" class="required" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                    oninput="this.setCustomValidity('')"><br>
+
+                <label for="pronouns">Pronouns (optional)</label><br>
+                <select id="pronouns" name="pronouns">
+                    <option value="he/him">---</option>
+                    <option value="he/him">He/Him</option>
+                    <option value="she/her">She/Her</option>
+                    <option value="they/them">They/Them</option>
+                </select><br><br>
+
+                <label for="promo-code">Promo Code (winner gets a discount code !!!)</label><br>
+                <input type="text" id="promo-code" name="promo-code"><br><br>
+
+                <input type="submit" value="Submit"><br><br>
+
+                <p class="required-label">Fields marked with * are required.</p>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-right">
+                <label for="favorite-symbol">Favorite Halloween Symbol (optional)</label><br>
+                <hr>
+
+                <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="ghost">
+                <label for="favorite-symbol" class="symbol-label"><i
+                        class="symbol-icon fas fa-ghost"></i>Ghost</label><br>
+
+                <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="jack-o-lantern">
+                <label for="favorite-symbol" class="symbol-label"><i
+                        class="symbol-icon fas fa-pumpkin"></i>Jack-o'-lantern</label><br>
+
+                <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="witch">
+                <label for="favorite-symbol" class="symbol-label"><i
+                        class="symbol-icon fas fa-hat-wizard"></i>Witch</label><br>
+
+                <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="bat">
+                <label for="favorite-symbol" class="symbol-label"><i class="symbol-icon fas fa-bat"></i>Bat</label><br>
+
+                <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="spider">
+                <label for="favorite-symbol" class="symbol-label"><i
+                        class="symbol-icon fas fa-spider"></i>Spider</label><br>
+
+                <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="skeleton">
+                <label for="favorite-symbol" class="symbol-label"><i
+                        class="symbol-icon fas fa-skull"></i>Skeleton</label><br>
+
+                <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="black-cat">
+                <label for="favorite-symbol" class="symbol-label"><i class="symbol-icon fas fa-cat"></i>Black
+                    cat</label><br>
+
+                <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="vampire">
+                <label for="favorite-symbol" class="symbol-label"><i
+                        class="symbol-icon fas fa-vampire"></i>Vampire</label><br>
+
+                <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="zombie">
+                <label for="favorite-symbol" class="symbol-label"><i
+                        class="symbol-icon fas fa-walking"></i>Zombie</label><br>
+
+                <input type="checkbox" id="favorite-symbol" name="favorite-symbol" value="werewolf">
+                <label for="favorite-symbol" class="symbol-label"><i
+                        class="symbol-icon fas fa-wolf-pack-battalion"></i>Werewolf</label><br><br>
+            </div>
+
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-black footer py-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div id="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.5110645199804!2d18.067983777056337!3d59.32442101141368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e2f59fd599%3A0xd65a76a8a13271cb!2sSkomakargatan%2030%2C%20111%2029%20Stockholm!5e0!3m2!1sen!2sse!4v1681831361960!5m2!1sen!2sse"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center m-3">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                            aria-label="Find us on Facebook (link opens in a new tab)" class="me-3 text-white"><i
+                                class="fab fa-facebook-square ms-3"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                            aria-label="Find us on Instagram (link opens in a new tab)" class="me-3 text-white"><i
+                                class="fab fa-instagram-square ms-3"></i></a>
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener"
+                            aria-label="Find us on Twitter (link opens in a new tab)" class="me-3 text-white"><i
+                                class="fab fa-twitter-square ms-3"></i></a>
+                    </div>
+                    <div class="copy-right">
+                        <p class="text-center text-white">Skeleton Crew's Hackathon Project</p>
+                        <p class="mt-3 mb-1 text-center text-white">&copy; 2023 Halloween Showcase. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="popup" class="popup-container" style="display: none;">
+        <div class="ghost">
+            <div class="eye"></div>
+            <div class="eye right"></div>
+            <div class="mouth"></div>
+            <div class="tongue"></div>
+        </div>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+
+    <script>
+        function showPopup(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            var ghostContainer = document.getElementById('popup');
+            ghostContainer.style.display = 'flex';
+
+            // Set a timer to hide the animation after 30 seconds (30000 milliseconds)
+            setTimeout(function () {
+                ghostContainer.style.display = 'none';
+                resetForm();
+            }, 5000);
+        }
+
+        function closePopup() {
+            var ghostContainer = document.getElementById('popup');
+            ghostContainer.style.display = 'none';
+        }
+
+        // Function to reset the form to its default state
+        function resetForm() {
+            document.getElementById("registration-form").reset();
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.getElementById('registration-form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the form from being submitted initially
+
+                var emailInput = document.getElementById('email');
+                var fnameInput = document.getElementById('fname');
+                var lnameInput = document.getElementById('lname');
+
+                if (fnameInput.value.trim() === '' || lnameInput.value.trim() === '' || emailInput.value.trim() === '') {
+                    alert('Please fill in all required fields with valid information.');
+                } else if (!emailIsValid(emailInput.value.trim())) {
+                    alert('Please enter a valid email address.');
+                } else {
+                    showPopup(event);
+                }
+            });
+
+            // Function to validate email format
+            function emailIsValid(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+        });
+
+    </script>
+
 </body>
 
 </html>
