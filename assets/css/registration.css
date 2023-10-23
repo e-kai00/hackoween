@@ -1,0 +1,299 @@
+/* Google fonts script */
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Creepster);
+
+*,
+::after,
+::before {
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    background-color: #200b2c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    line-height: 1.2;
+    color: #d74d09;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.logo {
+    font-family: Creepster, sans-serif;
+    text-shadow: orange 5px 0 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    font-size: 1rem;
+    color: #ffdab3;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffdab3;
+}
+
+nav a.nav-link,
+nav a.nav-link:hover {
+    color: #f4a361;
+}
+
+nav a:hover,
+nav a.nav-link,
+nav a.nav-link:hover {
+    font-size: 1rem;
+    /* Adjust the font size as needed */
+    color: #f4a361;
+}
+
+.navbar-toggler {
+    font-size: 1rem;
+    border-color: #ffd9b3;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    color: #ffdab3;
+}
+
+/* Form */
+
+form {
+    width: 500px;
+    padding: 50px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form container styles */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left section styles */
+.form-left {
+    width: 50%;
+}
+
+/* Right section styles */
+.form-right {
+    width: 35%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #000;
+    background-color: #ffdab3;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd9b3;
+    color: red;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: #ffd9b3;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.button-link:hover {
+    background-color: #e89772;
+}
+
+input[type="submit"]:hover {
+    background-color: #e89772;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+.required-label::after {
+    content: " (Required)";
+    color: #ffd9b3;
+    font-size: 12px;
+}
+
+.symbol-icon {
+    margin-right: 5px;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.ghost {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    animation: floatUpDown 1s ease-in-out infinite alternate;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.eye {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.eye.right {
+    left: 100px;
+}
+
+.mouth {
+    width: 80px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+    left: 60px;
+}
+
+.tongue {
+    width: 40px;
+    height: 60px;
+    background-color: #e60000;
+    border-radius: 50%;
+    position: absolute;
+    top: 160px;
+    left: 90px;
+    transform: rotate(15deg);
+}
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    25% {
+        transform: translate(0, -20px) rotate(100deg);
+    }
+
+    50% {
+        transform: translate(100px, 0) rotate(0);
+    }
+
+    75% {
+        transform: translate(0, -10px) rotate(-100deg);
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: red;
+    color: #ffdab3;
+}
+
+.footer,
+.footer a,
+.footer p {
+    color: #ffd9b3;
+}
+
+/* Media queries */
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-left,
+    .form-right {
+        width: 100%;
+    }
+
+    .popup-container {
+        height: 100%;
+    }
+}
+
+/* Adjust styles for larger screens */
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+
+    .form-container {
+        flex-direction: row;
+    }
+
+}
