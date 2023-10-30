@@ -137,7 +137,7 @@ input[type="submit"] {
 }
 
 .button-link {
-    display: inline-block;
+    /* display: inline-block;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -147,12 +147,20 @@ input[type="submit"] {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 16px;
+    font-size: 16px; */
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.07rem;
+    padding: 8px 20px;
+    color: hsl(31, 100%, 85%);
+    background: hsl(20, 92%, 44%);
+    text-decoration: none;
 }
 
 .button-link:hover {
     text-decoration: none;
     background-color: #e89772;
+    color: hsl(20, 92%, 44%);
 }
 
 input[type="submit"]:hover {
