@@ -254,20 +254,35 @@ input[type="submit"]:hover {
 }
 
 /* Footer */
-.footer {
+/* .footer {
     text-align: center;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     background-color: red;
     color: #ffdab3;
-}
+} */
 
-.footer,
+/* .footer,
 .footer a,
 .footer p {
     color: #ffd9b3;
-}
+} */
+
+.bottom-container {
+    background-color: #1F2833;
+    padding: 10px 0 20px;
+    margin-top: 3em;
+    width: 100%;
+    text-align: center;
+  }
+
+.bottom-container a {
+    color: #F4A261;
+    margin: 10px 20px;
+    text-decoration: none;
+    font-size: 2.3rem;
+  }
 
 /* Media queries */
 
