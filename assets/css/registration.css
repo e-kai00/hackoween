@@ -312,6 +312,12 @@ input[type="submit"]:hover {
     .popup-container {
         height: 100%;
     }
+
+  
+    .bottom-container a {
+    font-size: 1rem;
+        
+    }
 }
 
 /* Adjust styles for larger screens */
