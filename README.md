@@ -130,21 +130,37 @@ A series of huddles were organised on the Slack platform and the team quickly de
 
 #### _Game Page:_
 
--   The game page provides users with a Halloween Challenge, playing a game of rock, paper, scissors, with Halloween themed icons. In this game, Pumkin beats Ghost (pumpkins ward off spirits), Ghost beats Death (you can't kill a ghost) and Death beats Pumpkin (by chopping it up).  When the user selects a ghoul from the top three icons, their choice is displayed below. After a short timeout, the computer's (Evil's) randomly selected choice is displayed. If there is a win or loss state, the points are incremented accordingly, along with a message reinforcing the state. Otherwise a 'draw' message is displayed.  When the player recahes a score of 9, an alert box is displayed, informing the user they have one and presenting them with a code and a link to the registration page.  If the computer reaches 9 first, a box appears telling the user they have lost, with an invitation to try again. At either point, the game is reset.  Below the game are two buttons, one of which explains the rules and the other resets the game.
+-   The game page provides users with a Halloween Challenge, playing a game of rock, paper, scissors, with Halloween themed icons. In this game, Pumkin beats Ghost (pumpkins ward off spirits), Ghost beats Death (you can't kill a ghost) and Death beats Pumpkin (by chopping it up). 
+![Game Page](/docs/features-img/game-on.png)
 
-![Game Page](/docs/game.jpg.jpg)
+<br>
+
+-  When the user selects a ghoul from the top three icons, their choice is displayed below. After a short timeout, the computer's (Evil's) randomly selected choice is displayed. If there is a win or loss state, the points are incremented accordingly, along with a message reinforcing the state. Otherwise a 'draw' message is displayed.  
+![Game Page](/docs/features-img/game-win.png)
+
+<br> 
+
+- When the player recahes a score of 9, an alert box is displayed, informing the user they have one and presenting them with a code and a link to the registration page.  If the computer reaches 9 first, a box appears telling the user they have lost, with an invitation to try again. At either point, the game is reset.  Below the game are two buttons, one of which explains the rules and the other resets the game. 
+![Game Page](/docs/features-img/game-rules.png)
+
+<br>
 
 #### _Registration Page:_
 
--
+- This registration page allows users to sign up for our spooktacular Halloween party. Attendees can provide their basic information, including their first name, last name, and email. Additionally, they have the option to specify their pronouns if they wish.
+![Registration Page](/docs/features-img/refistration-form.png)
 
-![Registration Page](/docs/url.jpg)
+<br>
 
-## **Future-Enhancements**
+- To add a little mystery to the mix, we've incorporated a special game where guests can play to win a unique Promo Code that unlocks exciting discounts.
+![Registration Page](/docs/features-img/registration-play-button.png)
 
--   
+<br>
 
----
+- The Halloween spirit is alive with the option to select a favorite Halloween symbol from a list that includes classic icons like ghosts, jack-o'-lanterns, witches, bats, spiders, skeletons, black cats, vampires, zombies, and werewolves.   
+![Registration Page](/docs/features-img/refistration-fav-monster.png)
+
+<br>
 
 ## **Testing Phase**
 
@@ -152,36 +168,6 @@ A series of huddles were organised on the Slack platform and the team quickly de
     ​
 -   Functionality - Links checked
 
--   Contrast - The contrast on the page was checked using the WCAG Color contrast checker plugin in chrome.
-
-![WCAG Color Contrast Results](/docs/wcag-contrast-check.jpg)
-
--   Lighthouse - The site was checked using the Lighthouse chrome plugin.
-
-![Lighthouse Desktop Results](/docs/lighthouse-desktop.jpg)
-
-![lighthouse Mobile Results](/docs/lighthouse-mobile.jpg)
-​
-
--   Validators - The W3C validator was used to check both HTML and CSS.
-
-![HTML Validator](/docs/html-validation.jpg)
-
-![CSS Validator](/docs/css-validation.jpg)
-
-![CSS Validator Error](/docs/css-validation-error.jpg)
-
-![JS Validator Error](/docs/jshint-result.jpg)
-
----
-
-## **Bugs**
-
--   Issue -
--   Cause -
--   Resolution -
-
----
 
 ## **Deployment**
 
@@ -195,7 +181,7 @@ We deployed the page on GitHub pages via the following procedure:
    ​
    The live site can be found at the following URL - [Project Name](https://url/).
 
----
+
 
 ## **Tech**
 
@@ -211,13 +197,29 @@ The following technologies were employed in the creation of the site:
 -   ChatGPT
 -   Github
 
----
+
 
 ## **Credits**
 
-### **Honorable mentions**
+### **Content:**
 
-Members of "The Skeleton Crew":
+-   [Google Fonts](https://fonts.google.com/)
+
+-   [Font Awesome](https://fontawesome.com/icons)
+
+-   [Sweet Alert](https://sweetalert2.github.io/)
+
+-   [Iconset: Materia Halloween free](https://www.iconfinder.com/iconsets/materia-halloween-free/)
+
+-   [Game Icons Author: Icojam](https://www.iconfinder.com/Icojam/)
+
+-   [Photos: pixels.com](https://www.pexels.com/)
+
+-   [Sound for the game button: soundbible.com](https://soundbible.com/2055-Evil-Laugh-Male-6.html#)
+
+
+### **Members of "The Skeleton Crew"**
+
 
 - [Antonio-Claudio](https://github.com/Balkaneros91)
 
@@ -231,24 +233,3 @@ Members of "The Skeleton Crew":
 
 - [Filip Van Elslande](https://github.com/Harmonica-Men) 
  (Scrum Leader)
-
-
----
-
-### **Content:**
-
--   [Google Fonts](https://fonts.google.com/).
-
--   [Font Awesome](https://fontawesome.com/icons).
-
--   [Sweet Alert](https://sweetalert2.github.io/).
-
--   [Iconset: Materia Halloween free](https://www.iconfinder.com/iconsets/materia-halloween-free/).
-
--   [Game Icons Author: Icojam](https://www.iconfinder.com/Icojam/).
-
--   [Photos: pixels.com](https://www.pexels.com/).
-
--   [Sound for the game button: soundbible.com](https://soundbible.com/2055-Evil-Laugh-Male-6.html#).
-
-

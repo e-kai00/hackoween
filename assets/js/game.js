@@ -166,7 +166,7 @@ const sweetAlertTextEndGameWon = "You Won!&#10;Here is your discount code: XXX";
 function endGameWin() {
     Swal.fire({
         titleText:  "You Won!",
-        html:       "Here is your discount code:<br /><h3>XXX</h3>",
+        html:       "Here is your discount code:<br /><h3>SPOOKY25</h3>",
         confirmButtonColor: "#6E0E0A",
         confirmButtonText: "Use It Here",
         background: '#D74E09',
