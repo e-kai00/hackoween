@@ -68,7 +68,6 @@ nav a:hover,
 nav a.nav-link,
 nav a.nav-link:hover {
     font-size: 1rem;
-    /* Adjust the font size as needed */
     color: #f4a361;
 }
 
@@ -78,8 +77,6 @@ nav a.nav-link:hover {
 }
 
 .navbar-nav .nav-item .nav-link {
-    /* font-size: 1rem;
-    color: #ffdab3; */
     font-size: 1.5rem;
     color: #ffdab3;
     font-family: 'Creepster', sans-serif;
@@ -137,17 +134,6 @@ input[type="submit"] {
 }
 
 .button-link {
-    /* display: inline-block;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: red;
-    color: #ffd9b3;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 16px; */
     border-radius: 10px;
     font-family: "Poppins", sans-serif;
     font-size: 1.07rem;
@@ -260,22 +246,6 @@ input[type="submit"]:hover {
         transform: translate(0, -10px) rotate(-100deg);
     }
 }
-
-/* Footer */
-/* .footer {
-    text-align: center;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    background-color: red;
-    color: #ffdab3;
-} */
-
-/* .footer,
-.footer a,
-.footer p {
-    color: #ffd9b3;
-} */
 
 .bottom-container {
     background-color: #1F2833;
