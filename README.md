@@ -24,7 +24,6 @@ The site is designed to promote a fictional Halloween event in Dublin, Ireland, 
     - [**_Gallery Page_**](#gallery-page)
     - [**_Game Page_**](#game-page)
     - [**_Registration Page_**](#registration-page)
-1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
 1. [**Tech**](#tech)
@@ -121,8 +120,8 @@ A series of huddles were organised on the Slack platform and the team quickly de
   ![Photo gallery](/docs/features-img/gallery-open-photo.png)
 
   <br>
-  - photo gallery is fully mobile-responsive, ensuring that visitors can enjoy the spooky snapshots on any device, be it a computer, tablet, or smartphone, without compromising quality or functionality.  
 
+  - photo gallery is fully mobile-responsive, ensuring that visitors can enjoy the spooky snapshots on any device, be it a computer, tablet, or smartphone, without compromising quality or functionality.  
   ![Photo gallery](/docs/features-img/gallery-mobile.png)
   
   <br>
@@ -148,16 +147,19 @@ A series of huddles were organised on the Slack platform and the team quickly de
 #### _Registration Page:_
 
 - This registration page allows users to sign up for our spooktacular Halloween party. Attendees can provide their basic information, including their first name, last name, and email. Additionally, they have the option to specify their pronouns if they wish.
+
 ![Registration Page](/docs/features-img/refistration-form.png)
 
 <br>
 
 - To add a little mystery to the mix, we've incorporated a special game where guests can play to win a unique Promo Code that unlocks exciting discounts.
+
 ![Registration Page](/docs/features-img/registration-play-button.png)
 
 <br>
 
 - The Halloween spirit is alive with the option to select a favorite Halloween symbol from a list that includes classic icons like ghosts, jack-o'-lanterns, witches, bats, spiders, skeletons, black cats, vampires, zombies, and werewolves.   
+
 ![Registration Page](/docs/features-img/refistration-fav-monster.png)
 
 <br>
@@ -184,7 +186,6 @@ We deployed the page on GitHub pages via the following procedure:
 
 
 ## **Tech**
-
 ​
 The following technologies were employed in the creation of the site:
 ​
