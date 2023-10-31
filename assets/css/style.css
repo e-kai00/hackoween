@@ -129,6 +129,9 @@ hr {
   /* box-shadow: 0px 0px 8px 3px hsl(var(--orange)); */    
   border-bottom: none;
   width: 50%;
+  opacity: 100%;
+  margin: auto;
+  margin-bottom: 2em;
 }
   
 .bottom-container a {
